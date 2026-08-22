@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Perl (ExtUtils::MakeMaker)
+perl/Finnigan/blib/
+perl/Finnigan/pm_to_blib
+perl/Finnigan/Makefile
+perl/Finnigan/MYMETA.*
+*.tar.gz
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
