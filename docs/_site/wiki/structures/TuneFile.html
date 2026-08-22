@@ -1,0 +1,2467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TuneFile</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <div class="page">
+    <aside class="sidebar">
+  <a class="site-title" href="/wiki/">unfinnigan wiki</a>
+  <nav class="nav">
+    
+    
+      
+      
+      <details class="nav-group">
+        <summary>Start here</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/overview/WikiHome.html">WikiHome</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileLayoutOverview.html">FileLayoutOverview</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileStructureTOC.html">FileStructureTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/CommonStructures.html">CommonStructures</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/SupportedVersions.html">SupportedVersions</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/Problems.html">Problems</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>File-level structures</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfo.html">ASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/AuditTag.html">AuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/FileHeader.html">FileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InjectionData.html">InjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentMethodData.html">InstrumentMethodData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFile.html">MethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFileStructure.html">MethodFileStructure</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfoPreamble.html">RawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SeqRow.html">SeqRow</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group" open>
+        <summary>Index & metadata</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/Error.html">Error</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstID.html">InstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RunHeader.html">RunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TuneFile.html" class="active" aria-current="page">TuneFile</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Scan data streams</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/FractionCollector.html">FractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PacketHeader.html">PacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakData.html">PeakData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakList.html">PeakList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Profile.html">Profile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Reaction.html">Reaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanData.html">ScanData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventHierarchy.html">ScanEventHierarchy</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventStream.html">ScanEventStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndex.html">ScanIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexStream.html">ScanIndexStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParametersStream.html">ScanParametersStream</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Generic records</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericData.html">GenericData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecordExample.html">GenericRecordExample</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Shared field types</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawBytes.html">RawBytes</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TimestampWin64.html">TimestampWin64</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Decoder API (Perl)</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/DecoderTOC.html">DecoderTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfo.html">FinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfoPreamble.html">FinniganASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganAuditTag.html">FinniganAuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganDecoder.html">FinniganDecoder</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganError.html">FinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFileHeader.html">FinniganFileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFractionCollector.html">FinniganFractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">FinniganGenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataHeader.html">FinniganGenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericRecord.html">FinniganGenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInjectionData.html">FinniganInjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstID.html">FinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">FinniganInstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganMethodFile.html">FinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganNamespace.html">FinniganNamespace</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DIF.html">FinniganOLE2DIF</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">FinniganOLE2DirectoryEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2FAT.html">FinniganOLE2FAT</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2File.html">FinniganOLE2File</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Header.html">FinniganOLE2Header</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Property.html">FinniganOLE2Property</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPacketHeader.html">FinniganPacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeak.html">FinniganPeak</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeaks.html">FinniganPeaks</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfile.html">FinniganProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfileChunk.html">FinniganProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfo.html">FinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">FinniganRawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganReaction.html">FinniganReaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRunHeader.html">FinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSampleInfo.html">FinniganSampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScan.html">FinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanCentroidList.html">FinniganScanCentroidList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEvent.html">FinniganScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">FinniganScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventTemplate.html">FinniganScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanIndexEntry.html">FinniganScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanParameters.html">FinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfile.html">FinniganScanProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfileChunk.html">FinniganScanProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSeqRow.html">FinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/APIChanges.html">APIChanges</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Tools</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/tools/Tools.html">Tools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganASInfo.html">UnfinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganError.html">UnfinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganHeader.html">UnfinniganHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganIndex.html">UnfinniganIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganInstID.html">UnfinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganLog.html">UnfinniganLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMethodFile.html">UnfinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzML.html">UnfinniganMzML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzXML.html">UnfinniganMzXML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRawFileInfo.html">UnfinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRunHeader.html">UnfinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScan.html">UnfinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanLight.html">UnfinniganScanLight</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanParameters.html">UnfinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSegments.html">UnfinniganSegments</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSeqRow.html">UnfinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTrailer.html">UnfinniganTrailer</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTuneFile.html">UnfinniganTuneFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/ConversionTools.html">ConversionTools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/HachoirParser.html">HachoirParser</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Hexdump.html">Hexdump</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Iconv.html">Iconv</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/MzXMLUnpack.html">MzXMLUnpack</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnixStrings.html">UnixStrings</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/bgrep.html">bgrep</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Meta</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/meta/WikiSidebar.html">WikiSidebar</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+  </nav>
+</aside>
+
+    <main class="content">
+      <div class="content-header">
+        <label for="nav-toggle" class="menu-button">&#9776; Contents</label>
+      </div>
+      <article class="page-body">
+        
+          <h1 class="page-title">TuneFile</h1>
+        
+        <p>I have only a vague idea of the purpose of these data. It seems to be a complete snapshot of the instrument settings at a certain moment of time (at the end of calibration?) Or are these fixed target values for all parameters?</p>
+
+<p>There is some overlap with the data in the <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a>.</p>
+
+<p>For example, in one of the files I see these lens voltages in the <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a> #5:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uf-log -n 5 100225.raw | grep Lens\ [01]
+5       Lens 0 (V):     -1.45281195640564
+5       Lens 1 (V):     -14.8208923339844
+</code></pre></div></div>
+
+<p>In the tune file, these voltages have somewhat tidier values:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uf-tune  100225.raw | grep Lens\ [01]
+Lens 0 Voltage (V):     -1.5
+Lens 1 Voltage (V):     -15
+Lens 0 Voltage (V):     4.2
+Lens 1 Voltage (V):     15
+</code></pre></div></div>
+
+<p>The first two values (-1.5V and -15V) come from the POSITIVE POLARITY section of the tune file, and they do correspond to the values in the log record #5 – the fact that makes me think the tune file has the target settings, while the log file reports the actual running values.</p>
+
+<p>But the overlap is partial: there is a great number of parameters in the tune file never seen in the logs, and there are also values in the log not mentioned in the tune file.</p>
+
+<h3 id="location">Location</h3>
+
+<p>There is no pointer to the Tune File object; it can be reached by seeking to the <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>, reading it, reading the <a href="/wiki/structures/ScanEventHierarchy.html">Scan Event Hierarchy</a>, then reading the next <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a> (which happens to be the detached header for the <a href="/wiki/structures/ScanParameters.html">ScanParameters</a> stream. After that, the file pointer will be pointing at the Tune File.</p>
+
+<h3 id="decoding">Decoding</h3>
+
+<p>This object was made to be decoded with the <a href="/wiki/structures/GenericRecord.html">GenericRecord</a> decoder and it does not require its own decoder. Here is how to decode it with the generic decoders:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my $tune_file_header = Finnigan::GenericDataHeader-&gt;decode(\*INPUT);
+my $tune_file = Finnigan::GenericRecord-&gt;decode(\*INPUT, $tune_file_header-&gt;ordered_field_templates);
+$tune_file-&gt;dump;
+</code></pre></div></div>
+
+<h3 id="example-tune-file">Example tune file</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>label</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tune File Values</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Source Type:</td>
+      <td>ESI</td>
+    </tr>
+    <tr>
+      <td>Capillary Temp (C):</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <td>APCI Vaporizer Temp (C):</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sheath Gas Flow ():</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Aux Gas Flow ():</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sweep Gas Flow ():</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Injection Waveforms:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Zoom AGC Target:</td>
+      <td>3000</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Full AGC Target:</td>
+      <td>30000</td>
+    </tr>
+    <tr>
+      <td>Ion Trap SIM AGC Target:</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <td>Ion Trap MSn AGC Target:</td>
+      <td>10000</td>
+    </tr>
+    <tr>
+      <td>FTMS Injection Waveforms:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS Full AGC Target:</td>
+      <td>500000</td>
+    </tr>
+    <tr>
+      <td>FTMS SIM AGC Target:</td>
+      <td>100000</td>
+    </tr>
+    <tr>
+      <td>FTMS MSn AGC Target:</td>
+      <td>100000</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>POSITIVE POLARITY</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Source Voltage (kV):</td>
+      <td>4.6</td>
+    </tr>
+    <tr>
+      <td>Source Current (uA):</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Capillary Voltage (V):</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Tube Lens (V):</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Skimmer Offset (V):</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Multipole RF Amplifier (Vp-p):</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Multipole 00 Offset (V):</td>
+      <td>-2.25</td>
+    </tr>
+    <tr>
+      <td>Lens 0 Voltage (V):</td>
+      <td>-1.5</td>
+    </tr>
+    <tr>
+      <td>Multipole 0 Offset (V):</td>
+      <td>-4.5</td>
+    </tr>
+    <tr>
+      <td>Lens 1 Voltage (V):</td>
+      <td>-15</td>
+    </tr>
+    <tr>
+      <td>Gate Lens Offset (V):</td>
+      <td>-64</td>
+    </tr>
+    <tr>
+      <td>Multipole 1 Offset (V):</td>
+      <td>-6.5</td>
+    </tr>
+    <tr>
+      <td>Front Lens (V):</td>
+      <td>-5.5</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Zoom Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Zoom Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Full Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Full Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ion Trap SIM Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap SIM Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ion Trap MSn Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap MSn Max Ion Time (ms):</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>FTMS Full Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS Full Max Ion Time (ms):</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>FTMS SIM Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS SIM Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FTMS MSn Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS MSn Max Ion Time (ms):</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>NEGATIVE POLARITY</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Source Voltage (kV):</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Source Current (uA):</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Capillary Voltage (V):</td>
+      <td>-35</td>
+    </tr>
+    <tr>
+      <td>Tube Lens (V):</td>
+      <td>-200</td>
+    </tr>
+    <tr>
+      <td>Skimmer Offset (V):</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Multipole RF Amplifier (Vp-p):</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>Multipole 00 Offset (V):</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Lens 0 Voltage (V):</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>Multipole 0 Offset (V):</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>Lens 1 Voltage (V):</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Gate Lens Offset (V):</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Multipole 1 Offset (V):</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Front Lens (V):</td>
+      <td>5.25</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Zoom Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Zoom Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Full Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap Full Max Ion Time (ms):</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ion Trap SIM Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap SIM Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Ion Trap MSn Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Trap MSn Max Ion Time (ms):</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>FTMS Full Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS Full Max Ion Time (ms):</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FTMS SIM Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS SIM Max Ion Time (ms):</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FTMS MSn Micro Scans:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FTMS MSn Max Ion Time (ms):</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Additional FT Tune File Values</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 1:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 2:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 3:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 4:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 5:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 6:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 7:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 8:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 9:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Tune Item 10:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Calibration File Values</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Multiple RF Frequency:</td>
+      <td>2897.8</td>
+    </tr>
+    <tr>
+      <td>Main RF Frequency:</td>
+      <td>1191.5</td>
+    </tr>
+    <tr>
+      <td>QMSlope0:</td>
+      <td>32.6952306540375</td>
+    </tr>
+    <tr>
+      <td>QMSlope1:</td>
+      <td>32.7889826335866</td>
+    </tr>
+    <tr>
+      <td>QMSlope2:</td>
+      <td>32.4557312901694</td>
+    </tr>
+    <tr>
+      <td>QMSlope3:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>QMSlope4:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>QMInt0:</td>
+      <td>-27.4863764106794</td>
+    </tr>
+    <tr>
+      <td>QMInt1:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>QMInt2:</td>
+      <td>-31.498598102349</td>
+    </tr>
+    <tr>
+      <td>QMInt3:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>QMInt4:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>End Section Slope:</td>
+      <td>0.00329196608776634</td>
+    </tr>
+    <tr>
+      <td>End Section Int:</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>PQD CE Factor:</td>
+      <td>11.2042258337125</td>
+    </tr>
+    <tr>
+      <td>IsoW Slope:</td>
+      <td>0.000289967719325847</td>
+    </tr>
+    <tr>
+      <td>IsoW Int:</td>
+      <td>0.0218061656043128</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Slope0:</td>
+      <td>4.89838797885841e-05</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Int0:</td>
+      <td>0.00877718350970492</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Slope1:</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Int1:</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Slope2:</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Int2:</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Slope3:</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Tickle Amp. Int3:</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Multiplier 1 Normal Gain:</td>
+      <td>-1045</td>
+    </tr>
+    <tr>
+      <td>Multiplier 1 High Gain:</td>
+      <td>-1180</td>
+    </tr>
+    <tr>
+      <td>Multiplier 2 Normal Gain:</td>
+      <td>-948</td>
+    </tr>
+    <tr>
+      <td>Multiplier 2 High Gain:</td>
+      <td>-1065</td>
+    </tr>
+    <tr>
+      <td>Normal Res. Eject Slope:</td>
+      <td>0.0138772617036031</td>
+    </tr>
+    <tr>
+      <td>Normal Res. Eject Intercept:</td>
+      <td>4.01477059703527</td>
+    </tr>
+    <tr>
+      <td>Zoom Res. Eject Slope:</td>
+      <td>0.00350774703591171</td>
+    </tr>
+    <tr>
+      <td>Zoom Res. Eject Intercept:</td>
+      <td>2.46173290836301</td>
+    </tr>
+    <tr>
+      <td>Turbo Res. Eject Slope:</td>
+      <td>0.0692</td>
+    </tr>
+    <tr>
+      <td>Turbo Res. Eject Intercept:</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>AGC Res. Eject Slope:</td>
+      <td>0.0692</td>
+    </tr>
+    <tr>
+      <td>AGC Res. Eject Intercept:</td>
+      <td>17.3</td>
+    </tr>
+    <tr>
+      <td>UltraZoom Res. Eject Slope:</td>
+      <td>0.00118545420917888</td>
+    </tr>
+    <tr>
+      <td>UltraZoom Res. Eject Intercept:</td>
+      <td>0.392234333635423</td>
+    </tr>
+    <tr>
+      <td>Normal Mass Slope:</td>
+      <td>28.6719560724925</td>
+    </tr>
+    <tr>
+      <td>Normal Mass Intercept:</td>
+      <td>-5.68903033332039</td>
+    </tr>
+    <tr>
+      <td>Zoom Mass Slope:</td>
+      <td>27.1037565071964</td>
+    </tr>
+    <tr>
+      <td>Zoom Mass Intercept:</td>
+      <td>-44.3436655194345</td>
+    </tr>
+    <tr>
+      <td>Turbo Mass Slope:</td>
+      <td>28.3680848980717</td>
+    </tr>
+    <tr>
+      <td>Turbo Mass Intercept:</td>
+      <td>136.675547997898</td>
+    </tr>
+    <tr>
+      <td>AGC Mass Slope:</td>
+      <td>28.3680848980717</td>
+    </tr>
+    <tr>
+      <td>AGC Mass Intercept:</td>
+      <td>136.675547997898</td>
+    </tr>
+    <tr>
+      <td>UltraZoom Mass Slope:</td>
+      <td>27.1331526023409</td>
+    </tr>
+    <tr>
+      <td>UltraZoom Mass Intercept:</td>
+      <td>-34.4321184504399</td>
+    </tr>
+    <tr>
+      <td>Vernier Fine Mass Slope:</td>
+      <td>429.462235607234</td>
+    </tr>
+    <tr>
+      <td>Vernier Fine Mass Intercept:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Vernier Coarse Mass Slope:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Vernier Coarse Mass Intercept:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cap. Device Min (V):</td>
+      <td>-138.937117631265</td>
+    </tr>
+    <tr>
+      <td>Cap. Device Max (V):</td>
+      <td>138.948397655131</td>
+    </tr>
+    <tr>
+      <td>Tube Lens Device Min (V):</td>
+      <td>259.030466344069</td>
+    </tr>
+    <tr>
+      <td>Tube Lens Device Max (V):</td>
+      <td>-257.925925185535</td>
+    </tr>
+    <tr>
+      <td>Skimmer Device Min (V):</td>
+      <td>-139.098825005173</td>
+    </tr>
+    <tr>
+      <td>Skimmer Device Max (V):</td>
+      <td>138.867432732966</td>
+    </tr>
+    <tr>
+      <td>Multipole 00 Device Min (V):</td>
+      <td>-138.339440124674</td>
+    </tr>
+    <tr>
+      <td>Multipole 00 Device Max (V):</td>
+      <td>138.211048870593</td>
+    </tr>
+    <tr>
+      <td>Lens 0 Device Min (V):</td>
+      <td>-138.40331367295</td>
+    </tr>
+    <tr>
+      <td>Lens 0 Device Max (V):</td>
+      <td>138.002968335209</td>
+    </tr>
+    <tr>
+      <td>Gate Lens Device Min (V):</td>
+      <td>-135.619903771826</td>
+    </tr>
+    <tr>
+      <td>Gate Lens Device Max (V):</td>
+      <td>135.213152911219</td>
+    </tr>
+    <tr>
+      <td>Split Gate Device Min (V):</td>
+      <td>-0.169434792187699</td>
+    </tr>
+    <tr>
+      <td>Split Gate Device Max (V):</td>
+      <td>0.581632436084885</td>
+    </tr>
+    <tr>
+      <td>Multipole 0 Device Min (V):</td>
+      <td>-138.511284736956</td>
+    </tr>
+    <tr>
+      <td>Multipole 0 Device Max (V):</td>
+      <td>138.169291454364</td>
+    </tr>
+    <tr>
+      <td>Lens 1 Device Min (V):</td>
+      <td>-138.6984520281</td>
+    </tr>
+    <tr>
+      <td>Lens 1 Device Max (V):</td>
+      <td>138.452564400154</td>
+    </tr>
+    <tr>
+      <td>Multipole 1 Device Min (V):</td>
+      <td>-138.38711516691</td>
+    </tr>
+    <tr>
+      <td>Multipole 1 Device Max (V):</td>
+      <td>137.955547082073</td>
+    </tr>
+    <tr>
+      <td>Front Lens Device Min (V):</td>
+      <td>-138.402747350741</td>
+    </tr>
+    <tr>
+      <td>Front Lens Device Max (V):</td>
+      <td>138.325486931047</td>
+    </tr>
+    <tr>
+      <td>Front Section Device Min (V):</td>
+      <td>-142.346572798178</td>
+    </tr>
+    <tr>
+      <td>Front Section Device Max (V):</td>
+      <td>141.955307395198</td>
+    </tr>
+    <tr>
+      <td>Center Section Device Min (V):</td>
+      <td>-141.766908533748</td>
+    </tr>
+    <tr>
+      <td>Center Section Device Max (V):</td>
+      <td>141.790477648133</td>
+    </tr>
+    <tr>
+      <td>Back Section Device Min (V):</td>
+      <td>-142.651476643382</td>
+    </tr>
+    <tr>
+      <td>Back Section Device Max (V):</td>
+      <td>142.447312897751</td>
+    </tr>
+    <tr>
+      <td>Back Lens Device Min (V):</td>
+      <td>-141.562887415279</td>
+    </tr>
+    <tr>
+      <td>Back Lens Device Max (V):</td>
+      <td>141.611004592586</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 1:</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 2:</td>
+      <td>3.51774025494387</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 3:</td>
+      <td>3.51774025494387</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 4:</td>
+      <td>4.35917729198091</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 5:</td>
+      <td>4.35917729198091</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 6:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 7:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 8:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 9:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 10:</td>
+      <td>6.58333333333334</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 11:</td>
+      <td>6.58333333333334</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 12:</td>
+      <td>4.49166666666667</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 13:</td>
+      <td>4.49166666666667</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 14:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 15:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 16:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 17:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 18:</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 19:</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 20:</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 21:</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 22:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 23:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 24:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 25:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 26:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 27:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 28:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 29:</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 30:</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 31:</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 32:</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 33:</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 34:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 35:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 36:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 37:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 38:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 39:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 40:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 41:</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 42:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 43:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 44:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 45:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 46:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 47:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 48:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 49:</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 50:</td>
+      <td>340</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 51:</td>
+      <td>340</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 52:</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 53:</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 54:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 55:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 56:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 57:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 58:</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 59:</td>
+      <td>160</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 60:</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 61:</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 62:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 63:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 64:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 65:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 66:</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 67:</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 68:</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 69:</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 70:</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 71:</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 72:</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 73:</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 74:</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 75:</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 76:</td>
+      <td>1070</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 77:</td>
+      <td>1070</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 78:</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 79:</td>
+      <td>47484100.3440312</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 80:</td>
+      <td>47484054.4797093</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 81:</td>
+      <td>47483983.5928076</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 82:</td>
+      <td>47483797.3874308</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 83:</td>
+      <td>47484226.6266234</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 84:</td>
+      <td>47484206.0417848</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 85:</td>
+      <td>47484123.6005122</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 86:</td>
+      <td>47483996.1687637</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 87:</td>
+      <td>47475548.5858988</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 88:</td>
+      <td>47475448.3699832</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 89:</td>
+      <td>47475174.5532172</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 90:</td>
+      <td>47475027.0068159</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 91:</td>
+      <td>47475549.7550463</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 92:</td>
+      <td>47475488.4592654</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 93:</td>
+      <td>47475379.1806199</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 94:</td>
+      <td>47475291.5929506</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 95:</td>
+      <td>-7913366.33740503</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 96:</td>
+      <td>-8885805.82841696</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 97:</td>
+      <td>-10752616.2247758</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 98:</td>
+      <td>-11429054.2492863</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 99:</td>
+      <td>-18394191.9173264</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 100:</td>
+      <td>-19284066.1481123</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 101:</td>
+      <td>-21545128.2260251</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 102:</td>
+      <td>-20457333.415937</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 103:</td>
+      <td>-2065724.19496035</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 104:</td>
+      <td>-2150250.55760076</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 105:</td>
+      <td>-1222778.89028962</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 106:</td>
+      <td>282836.786338346</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 107:</td>
+      <td>4077893.55096619</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 108:</td>
+      <td>1139934.58031036</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 109:</td>
+      <td>183951.994318227</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 110:</td>
+      <td>1470287.70369865</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 111:</td>
+      <td>658063</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 112:</td>
+      <td>1410813.75</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 113:</td>
+      <td>3610003</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 114:</td>
+      <td>5443399</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 115:</td>
+      <td>716468.1875</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 116:</td>
+      <td>1591027</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 117:</td>
+      <td>3593915.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 118:</td>
+      <td>5213239.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 119:</td>
+      <td>5123728</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 120:</td>
+      <td>9044761</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 121:</td>
+      <td>16740389</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 122:</td>
+      <td>17048454</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 123:</td>
+      <td>2512751.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 124:</td>
+      <td>4601645</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 125:</td>
+      <td>9142286</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 126:</td>
+      <td>7718251.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 127:</td>
+      <td>351911.898222222</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 128:</td>
+      <td>351911.901569445</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 129:</td>
+      <td>333666.641558333</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 130:</td>
+      <td>333666.646008333</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 131:</td>
+      <td>-2.09362915010152</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 132:</td>
+      <td>-2.09362915010152</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 133:</td>
+      <td>-0.9631197846483</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 134:</td>
+      <td>-0.9631197846483</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 135:</td>
+      <td>-9.80473438271572</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 136:</td>
+      <td>-9.80473438271572</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 137:</td>
+      <td>-30.2855541443473</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 138:</td>
+      <td>-30.2855541443473</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 139:</td>
+      <td>-4.2846354528833</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 140:</td>
+      <td>-4.2846354528833</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 141:</td>
+      <td>-14.2120179115577</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 142:</td>
+      <td>-14.2120179115577</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 143:</td>
+      <td>7.93991044221173</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 144:</td>
+      <td>7.93991044221173</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 145:</td>
+      <td>88.1685178228383</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 146:</td>
+      <td>88.1685178228383</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 147:</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 148:</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 149:</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 150:</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 151:</td>
+      <td>-11.5585395923133</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 152:</td>
+      <td>-11.5585395923133</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 153:</td>
+      <td>-11.5116896448858</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 154:</td>
+      <td>-11.5116896448858</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 155:</td>
+      <td>-1.84809739520123</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 156:</td>
+      <td>-1.84809739520123</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 157:</td>
+      <td>-1.14951875143854</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 158:</td>
+      <td>-1.14951875143854</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 159:</td>
+      <td>2300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 160:</td>
+      <td>2300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 161:</td>
+      <td>2300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 162:</td>
+      <td>2300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 163:</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 164:</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 165:</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 166:</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 167:</td>
+      <td>2840</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 168:</td>
+      <td>2840</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 169:</td>
+      <td>2820</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 170:</td>
+      <td>2820</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 171:</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 172:</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 173:</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 174:</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 175:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 176:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 177:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 178:</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 179:</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 180:</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 181:</td>
+      <td>310</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 182:</td>
+      <td>310</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 183:</td>
+      <td>25.9792434313742</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 184:</td>
+      <td>25.9806559691136</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 185:</td>
+      <td>25.9952154480014</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 186:</td>
+      <td>25.9951937660567</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 187:</td>
+      <td>27.3467336838366</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 188:</td>
+      <td>-30.7</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 189:</td>
+      <td>-74.8000000000002</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 190:</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 191:</td>
+      <td>1951722</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 192:</td>
+      <td>1951722</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 193:</td>
+      <td>2651780</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 194:</td>
+      <td>2651780</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 195:</td>
+      <td>10070</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 196:</td>
+      <td>0.862655623670652</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 197:</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 198:</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 199:</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 200:</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 201:</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 202:</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 203:</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 204:</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 205:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 206:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 207:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 208:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 209:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 210:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 211:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 212:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 213:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 214:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 215:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 216:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 217:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 218:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 219:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 220:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 221:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 222:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 223:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 224:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 225:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 226:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 227:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 228:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 229:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 230:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 231:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 232:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 233:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 234:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 235:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 236:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 237:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 238:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 239:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 240:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 241:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 242:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 243:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 244:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 245:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 246:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 247:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 248:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 249:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT Cal. Item 250:</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+      </article>
+      <footer class="page-footer">
+        Original author: Gene Selkov Jr &middot;
+        Wiki recovered by Charlotte Dawson &middot;
+        <a href="https://github.com/csdaw/unfinnigan">source</a>
+        
+          &middot;
+          <a href="https://code.google.com/p/unfinnigan/wiki/TuneFile">original page</a>
+        
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SeqRow</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <div class="page">
+    <aside class="sidebar">
+  <a class="site-title" href="/wiki/">unfinnigan wiki</a>
+  <nav class="nav">
+    
+    
+      
+      
+      <details class="nav-group">
+        <summary>Start here</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/overview/WikiHome.html">WikiHome</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileLayoutOverview.html">FileLayoutOverview</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileStructureTOC.html">FileStructureTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/CommonStructures.html">CommonStructures</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/SupportedVersions.html">SupportedVersions</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/Problems.html">Problems</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group" open>
+        <summary>File-level structures</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfo.html">ASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/AuditTag.html">AuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/FileHeader.html">FileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InjectionData.html">InjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentMethodData.html">InstrumentMethodData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFile.html">MethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFileStructure.html">MethodFileStructure</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfoPreamble.html">RawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SeqRow.html" class="active" aria-current="page">SeqRow</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Index & metadata</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/Error.html">Error</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstID.html">InstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RunHeader.html">RunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TuneFile.html">TuneFile</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Scan data streams</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/FractionCollector.html">FractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PacketHeader.html">PacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakData.html">PeakData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakList.html">PeakList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Profile.html">Profile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Reaction.html">Reaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanData.html">ScanData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventHierarchy.html">ScanEventHierarchy</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventStream.html">ScanEventStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndex.html">ScanIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexStream.html">ScanIndexStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParametersStream.html">ScanParametersStream</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Generic records</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericData.html">GenericData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecordExample.html">GenericRecordExample</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Shared field types</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawBytes.html">RawBytes</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TimestampWin64.html">TimestampWin64</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Decoder API (Perl)</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/DecoderTOC.html">DecoderTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfo.html">FinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfoPreamble.html">FinniganASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganAuditTag.html">FinniganAuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganDecoder.html">FinniganDecoder</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganError.html">FinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFileHeader.html">FinniganFileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFractionCollector.html">FinniganFractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">FinniganGenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataHeader.html">FinniganGenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericRecord.html">FinniganGenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInjectionData.html">FinniganInjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstID.html">FinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">FinniganInstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganMethodFile.html">FinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganNamespace.html">FinniganNamespace</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DIF.html">FinniganOLE2DIF</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">FinniganOLE2DirectoryEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2FAT.html">FinniganOLE2FAT</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2File.html">FinniganOLE2File</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Header.html">FinniganOLE2Header</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Property.html">FinniganOLE2Property</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPacketHeader.html">FinniganPacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeak.html">FinniganPeak</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeaks.html">FinniganPeaks</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfile.html">FinniganProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfileChunk.html">FinniganProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfo.html">FinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">FinniganRawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganReaction.html">FinniganReaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRunHeader.html">FinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSampleInfo.html">FinniganSampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScan.html">FinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanCentroidList.html">FinniganScanCentroidList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEvent.html">FinniganScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">FinniganScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventTemplate.html">FinniganScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanIndexEntry.html">FinniganScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanParameters.html">FinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfile.html">FinniganScanProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfileChunk.html">FinniganScanProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSeqRow.html">FinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/APIChanges.html">APIChanges</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Tools</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/tools/Tools.html">Tools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganASInfo.html">UnfinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganError.html">UnfinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganHeader.html">UnfinniganHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganIndex.html">UnfinniganIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganInstID.html">UnfinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganLog.html">UnfinniganLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMethodFile.html">UnfinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzML.html">UnfinniganMzML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzXML.html">UnfinniganMzXML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRawFileInfo.html">UnfinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRunHeader.html">UnfinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScan.html">UnfinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanLight.html">UnfinniganScanLight</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanParameters.html">UnfinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSegments.html">UnfinniganSegments</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSeqRow.html">UnfinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTrailer.html">UnfinniganTrailer</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTuneFile.html">UnfinniganTuneFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/ConversionTools.html">ConversionTools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/HachoirParser.html">HachoirParser</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Hexdump.html">Hexdump</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Iconv.html">Iconv</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/MzXMLUnpack.html">MzXMLUnpack</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnixStrings.html">UnixStrings</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/bgrep.html">bgrep</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Meta</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/meta/WikiSidebar.html">WikiSidebar</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+  </nav>
+</aside>
+
+    <main class="content">
+      <div class="content-header">
+        <label for="nav-toggle" class="menu-button">&#9776; Contents</label>
+      </div>
+      <article class="page-body">
+        
+          <h1 class="page-title">SeqRow</h1>
+        
+        <p>This object contains the details of the row in the sequencer table that commanded the injection of the sample whose spectra are encoded in this raw file.</p>
+
+<p>The amount of data in this object appears to depend on what the user enters in Xcalibur’s Sequence Setup, and it is often left blank or nearly blank.</p>
+
+<h2 id="structure">Structure</h2>
+
+<h3 id="finnigan-mat-lcq">Finnigan MAT LCQ</h3>
+
+<p>(or any file V.8 and earlier)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>offset</th>
+      <th>size</th>
+      <th>type</th>
+      <th>key</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>64</td>
+      <td><a href="/wiki/structures/InjectionData.html">InjectionData</a></td>
+      <td><code class="language-plaintext highlighter-rouge">injection</code></td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[a]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[b]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>6</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">comment</code></td>
+      <td>QC=10 pg/ml,IS=100 pg/ml</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[1]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[2]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[3]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[4]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[5]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>82</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">inst method</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\LCQ\Methods\\x007417_49srm_1050_open</code></td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">proc method</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>68</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">file name</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\LCQ\Data\mrw_27417\Sat_0504_WD1\27417_Sat_0504WD1_Plas_22.RAW</code></td>
+    </tr>
+    <tr>
+      <td>256</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">path</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\LCQ\Data\mrw_27417\Sat_0504_WD1</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ltq-ft">LTQ-FT</h3>
+
+<p>(version 57)</p>
+
+<p>SeqRow in these files has three additional text fields (<code class="language-plaintext highlighter-rouge">vial</code> and <code class="language-plaintext highlighter-rouge">unknown text[c,d]</code>) and one long integer:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>offset</th>
+      <th>size</th>
+      <th>type</th>
+      <th>key</th>
+      <th>example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>64</td>
+      <td><a href="/wiki/structures/InjectionData.html">InjectionData</a></td>
+      <td><code class="language-plaintext highlighter-rouge">injection</code></td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[a]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[b]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>6</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">comment</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[1]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[2]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[3]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[4]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[5]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>126</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">inst method</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\Xcalibur\methods\90min-10-02-2004-triplePlay3ionsJens.meth</code></td>
+    </tr>
+    <tr>
+      <td>228</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">proc method</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>232</td>
+      <td>36</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">file name</code></td>
+      <td><code class="language-plaintext highlighter-rouge">NucleoliY-14.RAW</code></td>
+    </tr>
+    <tr>
+      <td>268</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">path</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\Xcalibur\Data\</code></td>
+    </tr>
+    <tr>
+      <td>306</td>
+      <td>6</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">vial</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td>312</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[c]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>316</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[d]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>320</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">unknown long</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ltq-orbitrap">LTQ-Orbitrap</h3>
+
+<h3 id="ltq-orbitrap-xl">LTQ-Orbitrap XL</h3>
+
+<p>(Versions 62 and 63)</p>
+
+<p>SeqRow in these files begins with the same structure as in v.57, but has 15 additional text fields (<code class="language-plaintext highlighter-rouge">unknown text[e..s]</code>) following it:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>0</th>
+      <th>64</th>
+      <th><a href="/wiki/structures/InjectionData.html">InjectionData</a></th>
+      <th><code class="language-plaintext highlighter-rouge">injection</code></th>
+      <th>…</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>64</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[a]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[b]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>72</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">comment</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SILAC, Sec 1and2, 5 uL inj fr 50uL</code></td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>16</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[1]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">043008</code></td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[2]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0.25uL C8 Optipak</code></td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>90</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[3]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Michrom 75um x 20cm C18aq 5u/200A spray tip</code></td>
+    </tr>
+    <tr>
+      <td>292</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[4]</code></td>
+      <td><code class="language-plaintext highlighter-rouge">4/21/08</code></td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">user label[5]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>314</td>
+      <td>128</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">inst method</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\Xcalibur\methods\orbi261_eksi2d_top5_1e6_20_nolm_90min.meth</code></td>
+    </tr>
+    <tr>
+      <td>442</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">proc method</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>446</td>
+      <td>74</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">file name</code></td>
+      <td><code class="language-plaintext highlighter-rouge">kj261_08apr30_05_silac_sec1and2.RAW</code></td>
+    </tr>
+    <tr>
+      <td>520</td>
+      <td>70</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">path</code></td>
+      <td><code class="language-plaintext highlighter-rouge">C:\XCALIBUR\DATA\ORBI261_APR2008\</code></td>
+    </tr>
+    <tr>
+      <td>590</td>
+      <td>8</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">vial</code></td>
+      <td><code class="language-plaintext highlighter-rouge">B1</code></td>
+    </tr>
+    <tr>
+      <td>598</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[c]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>602</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[d]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>606</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">unknown long</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>610</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[e]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>614</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[f]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>618</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[g]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>622</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[h]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>626</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[i]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>630</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[j]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>634</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[k]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>638</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[l]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>642</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[m]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>646</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[n]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>650</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[o]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>654</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[p]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>658</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[q]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>662</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[r]</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>666</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">unknown text[s]</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+      </article>
+      <footer class="page-footer">
+        Original author: Gene Selkov Jr &middot;
+        Wiki recovered by Charlotte Dawson &middot;
+        <a href="https://github.com/csdaw/unfinnigan">source</a>
+        
+          &middot;
+          <a href="https://code.google.com/p/unfinnigan/wiki/SeqRow">original page</a>
+        
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

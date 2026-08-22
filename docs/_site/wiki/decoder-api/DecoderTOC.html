@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DecoderTOC</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <div class="page">
+    <aside class="sidebar">
+  <a class="site-title" href="/wiki/">unfinnigan wiki</a>
+  <nav class="nav">
+    
+    
+      
+      
+      <details class="nav-group">
+        <summary>Start here</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/overview/WikiHome.html">WikiHome</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileLayoutOverview.html">FileLayoutOverview</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileStructureTOC.html">FileStructureTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/CommonStructures.html">CommonStructures</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/SupportedVersions.html">SupportedVersions</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/Problems.html">Problems</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>File-level structures</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfo.html">ASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/AuditTag.html">AuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/FileHeader.html">FileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InjectionData.html">InjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentMethodData.html">InstrumentMethodData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFile.html">MethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFileStructure.html">MethodFileStructure</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfoPreamble.html">RawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SeqRow.html">SeqRow</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Index & metadata</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/Error.html">Error</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstID.html">InstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RunHeader.html">RunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TuneFile.html">TuneFile</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Scan data streams</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/FractionCollector.html">FractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PacketHeader.html">PacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakData.html">PeakData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakList.html">PeakList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Profile.html">Profile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Reaction.html">Reaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanData.html">ScanData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventHierarchy.html">ScanEventHierarchy</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventStream.html">ScanEventStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndex.html">ScanIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexStream.html">ScanIndexStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParametersStream.html">ScanParametersStream</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Generic records</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericData.html">GenericData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecordExample.html">GenericRecordExample</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Shared field types</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawBytes.html">RawBytes</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TimestampWin64.html">TimestampWin64</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group" open>
+        <summary>Decoder API (Perl)</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/DecoderTOC.html" class="active" aria-current="page">DecoderTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfo.html">FinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfoPreamble.html">FinniganASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganAuditTag.html">FinniganAuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganDecoder.html">FinniganDecoder</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganError.html">FinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFileHeader.html">FinniganFileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFractionCollector.html">FinniganFractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">FinniganGenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataHeader.html">FinniganGenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericRecord.html">FinniganGenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInjectionData.html">FinniganInjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstID.html">FinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">FinniganInstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganMethodFile.html">FinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganNamespace.html">FinniganNamespace</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DIF.html">FinniganOLE2DIF</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">FinniganOLE2DirectoryEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2FAT.html">FinniganOLE2FAT</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2File.html">FinniganOLE2File</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Header.html">FinniganOLE2Header</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Property.html">FinniganOLE2Property</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPacketHeader.html">FinniganPacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeak.html">FinniganPeak</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeaks.html">FinniganPeaks</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfile.html">FinniganProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfileChunk.html">FinniganProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfo.html">FinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">FinniganRawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganReaction.html">FinniganReaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRunHeader.html">FinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSampleInfo.html">FinniganSampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScan.html">FinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanCentroidList.html">FinniganScanCentroidList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEvent.html">FinniganScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">FinniganScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventTemplate.html">FinniganScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanIndexEntry.html">FinniganScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanParameters.html">FinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfile.html">FinniganScanProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfileChunk.html">FinniganScanProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSeqRow.html">FinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/APIChanges.html">APIChanges</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Tools</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/tools/Tools.html">Tools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganASInfo.html">UnfinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganError.html">UnfinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganHeader.html">UnfinniganHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganIndex.html">UnfinniganIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganInstID.html">UnfinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganLog.html">UnfinniganLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMethodFile.html">UnfinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzML.html">UnfinniganMzML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzXML.html">UnfinniganMzXML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRawFileInfo.html">UnfinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRunHeader.html">UnfinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScan.html">UnfinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanLight.html">UnfinniganScanLight</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanParameters.html">UnfinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSegments.html">UnfinniganSegments</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSeqRow.html">UnfinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTrailer.html">UnfinniganTrailer</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTuneFile.html">UnfinniganTuneFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/ConversionTools.html">ConversionTools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/HachoirParser.html">HachoirParser</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Hexdump.html">Hexdump</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Iconv.html">Iconv</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/MzXMLUnpack.html">MzXMLUnpack</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnixStrings.html">UnixStrings</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/bgrep.html">bgrep</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Meta</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/meta/WikiSidebar.html">WikiSidebar</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+  </nav>
+</aside>
+
+    <main class="content">
+      <div class="content-header">
+        <label for="nav-toggle" class="menu-button">&#9776; Contents</label>
+      </div>
+      <article class="page-body">
+        
+          <h1 class="page-title">DecoderTOC</h1>
+        
+        <h1 id="finnigan-data-decoder">Finnigan data decoder</h1>
+
+<p><strong>Note</strong>: <em>The API has changed to accommodate the new 64-bit file pointers introduced in <strong>v.64</strong>, as well as the 32-bit pointers used in the older versions. <a href="/wiki/decoder-api/APIChanges.html">The tools written with the old API must be fixed</a>.</em></p>
+
+<h2 id="overview">Overview</h2>
+
+<p>The decoder is written in <a href="http://www.perl.org/">perl</a> and it consists of a hierarchy of objects recursively instantiating themselves from the binary data in the input file. The object hierarchy closely follows the <a href="/wiki/overview/FileStructureTOC.html">Finnigan file structure</a>. The simplest objects use the <a href="http://perldoc.perl.org/functions/unpack.html">unpack</a> function to read the data according to their object templates, and the more complex objects call other objects’ constructors, passing them the file pointer they have acquired from the user program. Each elementary object advances the file pointer by the size of its template.</p>
+
+<p>Because the size of some objects stored in the input file cannot be known beforehand, certain data streams can only be reached by reading through all the preceding data structures. Use <a href="/wiki/overview/FileLayoutOverview.html">this diagram</a> as a guide to determine which structures must be consumed on the way to a certain type of data.</p>
+
+<h2 id="decoder-api">Decoder API</h2>
+
+<p>This document is work in progress. While it is reasonably complete and accurate, it cannot possibly cover all code and all use cases. An alternative way to learn how to use the decoder is to look at the Unfinnigan tools (uf-*) and at the test suite Finnigan.t, which covers a substantial part of the API.</p>
+
+<h3 id="the-basic-use-pattern">The basic use pattern</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  seek INPUT, $object_address, 0
+  $object = Finnigan::Object-&gt;decode(\*INPUT, $args);
+</code></pre></div></div>
+
+<p>where <code class="language-plaintext highlighter-rouge">Object</code> is a symbol for any of the decoder objects listed below.</p>
+
+<p>Each Finnigan object has a constructor method named <strong>decode()</strong>, whose first argument is a filehandle positioned at the start of the object to be decoded. Some decoders require additional arguments passed as an array reference, for example, the version number argument in <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">Finnigan::ScanEventPreamble</a>. A single argument can be passed as it is, while multiple arguments can be passed as an array reference.</p>
+
+<p>The constructor advances the handle to the start of the next object, so seeking to the start of the object of interest is only necessary when doing partial reads; in principle, the entire file can be read by calling of object constructors in sequency. In reality, it is often more efficient to seek ahead to fetch an index structure stored near the end of the file, then go back to the data stream using the pointers in the index.</p>
+
+<p>The decoded data can be obtained by calling accessor methods on the object or by de-referencing the object reference (since all Finnigan objects are blessed hash references):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $x = $object-&gt;element
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $x = $object-&gt;{element}
+</code></pre></div></div>
+
+<p>The accessor option is nicer, as it leads to less clutter in the code and leaves the possibility for additional processing of the data by the accessor routine, but it incurs a substantial performance penalty. For this reason, hash dereference is preferred in performance-critical code (inside loops).</p>
+
+<h3 id="dumpargs">dump(%args)</h3>
+
+<p>All Finnigan objects are descendants of Finnigan::Decoder. One of the <strong>Finnigan::Decoder</strong> methods they inherit is <strong>dump()</strong>, which provides an easy way to explore the contents of decoded objects. The <strong>dump()</strong> method prints out the structure of the object it is called on in a few style, with relative or absolute addressess.</p>
+
+<p>For example, many object dumps used in this wiki were created thus:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $object-&gt;dump(style =&gt; 'wiki', relative =&gt; 1);
+</code></pre></div></div>
+
+<p>The <strong>style</strong> argument can have the values of <code class="language-plaintext highlighter-rouge">wiki</code>, <code class="language-plaintext highlighter-rouge">html</code> or none (meaning plain text). The <strong>relative</strong> argument is a boolean indicating whether to use the absolute or relative file addresses in the output. Relative in this case means “an offset within the object”, while absolute is the seek address within the data file.</p>
+
+<h3 id="readstream-template_list-arg">read($stream, $template_list, $arg)</h3>
+
+<p>This is the <a href="/wiki/decoder-api/FinniganDecoder.html">Finnigan::Decoder</a> constructor method. Some derived decoders use it internally, but it can also be used to decode trivial objects at a given location in a file without having to write a dedicated decoder.</p>
+
+<p>For example, to read a 32-bit stream length, use:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  my $object = Finnigan::Decoder-&gt;read(\*INPUT, ['length' =&gt; ['V', 'UInt32']]);
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">$template_list</code> argument names all fields to decode (in this case, just one: <code class="language-plaintext highlighter-rouge">length</code>), the template to use for each field (in this example, <code class="language-plaintext highlighter-rouge">V</code>), and provides a human-readable symbol for the template, which can be used in a number of ways; for example, when inspecting the structures with the <code class="language-plaintext highlighter-rouge">dump</code> method.</p>
+
+<p>This may seem like a kludgy way of reading four bytes, but the upshot is that the resulting <code class="language-plaintext highlighter-rouge">$object</code> will have the size, type and location information tucked into it, so it can be analysed and dumped in a way consistent with other decoded objects. The advantage becomes even more apparent when the structure is more complex than a single scalar object.</p>
+
+<p>The inherited <code class="language-plaintext highlighter-rouge">read</code> method provides the core functionality of all Finnigan decoders.</p>
+
+<p>If only the value of the object is sought, then this even more kludgy code can be used:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  my $stream_length = Finnigan::Decoder-&gt;read(\*INPUT, ['length' =&gt; ['V', 'UInt32']])-&gt;{data}-&gt;{length}-&gt;{value};
+</code></pre></div></div>
+
+<p>Doing it this way is nonetheless easier than writing several lines of code reading the data into a buffer, checking for the I/O errors and unpacking the value.</p>
+
+<h3 id="stringify">stringify()</h3>
+
+<p>Another handy method defined in some of the Finnigan objects is <strong>stringify()</strong>. It allows a concise representation of an object to be injected anywhere Perl expects a string. For example,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $scan_event = Finnigan::ScanEvent-&gt;decode( \*INPUT, $header-&gt;version);
+  say "$scan_event";
+</code></pre></div></div>
+
+<h2 id="submodules">Submodules</h2>
+
+<p>All submodules have built-in documentation (POD). To read the documentation for the installed modules, use <strong>man</strong> or <strong>perldoc</strong>, as in this example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man Finnigan::ScanEvent
+perldoc Finnigan::ScanEvent
+</code></pre></div></div>
+
+<p><strong><a href="/wiki/decoder-api/FinniganNamespace.html">Finnigan</a></strong> [source] – the namespace object</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganAuditTag.html">Finnigan::AuditTag</a></strong> [source] – <a href="/wiki/structures/AuditTag.html">AuditTag</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganASInfo.html">Finnigan::ASInfo</a></strong> [source] – <a href="/wiki/structures/ASInfo.html">ASInfo</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganASInfoPreamble.html">Finnigan::ASInfoPreamble</a></strong> [source] – <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganDecoder.html">Finnigan::Decoder</a></strong> [source] – the base class for all Finnigan decoders</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganError.html">Finnigan::Error</a></strong> [source] – decoder for <a href="/wiki/structures/Error.html">Error</a>, an <a href="/wiki/structures/ErrorLog.html">ErrorLog</a> entry</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganFileHeader.html">Finnigan::FileHeader</a></strong> [source] – <a href="/wiki/structures/FileHeader.html">FileHeader</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganFractionCollector.html">Finnigan::FractionCollector</a></strong> [source] – <a href="/wiki/structures/FractionCollector.html">FractionCollector</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">Finnigan::GenericDataDescriptor</a></strong> [source] – <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganGenericDataHeader.html">Finnigan::GenericDataHeader</a></strong> [source] – <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganGenericRecord.html">Finnigan::GenericRecord</a></strong> [source] – <a href="/wiki/structures/GenericRecord.html">GenericRecord</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganInjectionData.html">Finnigan::InjectionData</a></strong> [source] – <a href="/wiki/structures/InjectionData.html">InjectionData</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganInstID.html">Finnigan::InstID</a></strong> [source] – <a href="/wiki/structures/InstID.html">InstID</a> (instrument identifiers) decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">Finnigan::InstrumentLogRecord</a></strong> [source] – <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganMethodFile.html">Finnigan::MethodFile</a></strong> [source] – a decoder for <a href="/wiki/structures/MethodFile.html">MethodFile</a>, an OLE2 method file container</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2DIF.html">Finnigan::OLE2DIF</a></strong> [source] – Double-Indirect FAT decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">Finnigan::OLE2DirectoryEntry</a></strong> [source] – OLE2 directory entry decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2FAT.html">Finnigan::OLE2FAT</a></strong> [source] – FAT sector decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2File.html">Finnigan::OLE2File</a></strong> [source] – Microsoft OLE2 (CDF) file decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2Header.html">Finnigan::OLE2Header</a></strong> [source] – OLE2 header decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganOLE2Property.html">Finnigan::OLE2Property</a></strong> [source] – OLE2 Property (index node) decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganPacketHeader.html">Finnigan::PacketHeader</a></strong> [source] – <a href="/wiki/structures/PacketHeader.html">PacketHeader</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganPeak.html">Finnigan::Peak</a></strong> [source] – the decoder for a single peak in <a href="/wiki/structures/PeakList.html">PeakList</a></p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganPeaks.html">Finnigan::Peaks</a></strong> [source] – <a href="/wiki/structures/PeakList.html">PeakList</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganProfile.html">Finnigan::Profile</a></strong> [source] – <a href="/wiki/structures/Profile.html">Profile</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganProfileChunk.html">Finnigan::ProfileChunk</a></strong> [source] – <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a> decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganRawFileInfo.html">Finnigan::RawFileInfo</a></strong> [source] - the decoder for <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>, the primary index structure</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">Finnigan::RawFileInfoPreamble</a></strong> [source] – the binary data part in <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a></p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganReaction.html">Finnigan::Reaction</a></strong> [source] – the decoder for <a href="/wiki/structures/Reaction.html">Reaction</a> (precursor ion data)</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganRunHeader.html">Finnigan::RunHeader</a></strong> [source] – <a href="/wiki/structures/RunHeader.html">RunHeader</a> (the primary file index) decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganSampleInfo.html">Finnigan::SampleInfo</a></strong> [source] – <a href="/wiki/structures/SampleInfo.html">SampleInfo</a> (the primary file index) decoder</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScan.html">Finnigan::Scan</a></strong> [source] – compound and lightweight <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a> decoder</p>
+
+<ul>
+  <li>
+    <p><strong><a href="/wiki/decoder-api/FinniganScanProfile.html">Finnigan::Scan::Profile</a></strong> [source] – <a href="/wiki/structures/Profile.html">Profile</a> decoder</p>
+  </li>
+  <li>
+    <p><strong><a href="/wiki/decoder-api/FinniganScanProfileChunk.html">Finnigan::Scan::ProfileChunk</a></strong> [source] – <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a> decoder</p>
+  </li>
+  <li>
+    <p><strong><a href="/wiki/decoder-api/FinniganScanCentroidList.html">Finnigan::Scan::CentroidList</a></strong> [source] – <a href="/wiki/structures/PeakList.html">PeakList</a> decoder</p>
+  </li>
+</ul>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScanEvent.html">Finnigan::ScanEvent</a></strong> [source] – the decoder for <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>, the scan type descriptor</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScanEventPreamble.html">Finnigan::ScanEventPreamble</a></strong> [source] – the decoder for <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>, the byte array component of <a href="/wiki/structures/ScanEvent.html">ScanEvent</a></p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScanEventTemplate.html">Finnigan::ScanEventTemplate</a></strong> [source] – the decoder for <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>, the prototype scan descriptor</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScanIndexEntry.html">Finnigan::ScanIndexEntry</a></strong> [source] – the decoder for <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>, a linked list element pointing to scan data</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganScanParameters.html">Finnigan::ScanParameters</a></strong> [source] – the decoder for <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>, a <a href="/wiki/structures/GenericRecord.html">GenericRecord</a> containing various scan meta-data</p>
+
+<p><strong><a href="/wiki/decoder-api/FinniganSeqRow.html">Finnigan::SeqRow</a></strong> [source] – <a href="/wiki/structures/SeqRow.html">SeqRow</a> (sequencer table row) decoder</p>
+
+      </article>
+      <footer class="page-footer">
+        Original author: Gene Selkov Jr &middot;
+        Wiki recovered by Charlotte Dawson &middot;
+        <a href="https://github.com/csdaw/unfinnigan">source</a>
+        
+          &middot;
+          <a href="https://code.google.com/p/unfinnigan/wiki/DecoderTOC">original page</a>
+        
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

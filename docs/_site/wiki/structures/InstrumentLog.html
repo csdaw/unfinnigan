@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InstrumentLog</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <div class="page">
+    <aside class="sidebar">
+  <a class="site-title" href="/wiki/">unfinnigan wiki</a>
+  <nav class="nav">
+    
+    
+      
+      
+      <details class="nav-group">
+        <summary>Start here</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/overview/WikiHome.html">WikiHome</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileLayoutOverview.html">FileLayoutOverview</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileStructureTOC.html">FileStructureTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/CommonStructures.html">CommonStructures</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/SupportedVersions.html">SupportedVersions</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/Problems.html">Problems</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>File-level structures</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfo.html">ASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/AuditTag.html">AuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/FileHeader.html">FileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InjectionData.html">InjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentMethodData.html">InstrumentMethodData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFile.html">MethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFileStructure.html">MethodFileStructure</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfoPreamble.html">RawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SeqRow.html">SeqRow</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group" open>
+        <summary>Index & metadata</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/Error.html">Error</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstID.html">InstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLog.html" class="active" aria-current="page">InstrumentLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RunHeader.html">RunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TuneFile.html">TuneFile</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Scan data streams</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/FractionCollector.html">FractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PacketHeader.html">PacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakData.html">PeakData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakList.html">PeakList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Profile.html">Profile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Reaction.html">Reaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanData.html">ScanData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventHierarchy.html">ScanEventHierarchy</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventStream.html">ScanEventStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndex.html">ScanIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexStream.html">ScanIndexStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParametersStream.html">ScanParametersStream</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Generic records</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericData.html">GenericData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecordExample.html">GenericRecordExample</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Shared field types</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawBytes.html">RawBytes</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TimestampWin64.html">TimestampWin64</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Decoder API (Perl)</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/DecoderTOC.html">DecoderTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfo.html">FinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfoPreamble.html">FinniganASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganAuditTag.html">FinniganAuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganDecoder.html">FinniganDecoder</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganError.html">FinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFileHeader.html">FinniganFileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFractionCollector.html">FinniganFractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">FinniganGenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataHeader.html">FinniganGenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericRecord.html">FinniganGenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInjectionData.html">FinniganInjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstID.html">FinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">FinniganInstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganMethodFile.html">FinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganNamespace.html">FinniganNamespace</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DIF.html">FinniganOLE2DIF</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">FinniganOLE2DirectoryEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2FAT.html">FinniganOLE2FAT</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2File.html">FinniganOLE2File</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Header.html">FinniganOLE2Header</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Property.html">FinniganOLE2Property</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPacketHeader.html">FinniganPacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeak.html">FinniganPeak</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeaks.html">FinniganPeaks</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfile.html">FinniganProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfileChunk.html">FinniganProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfo.html">FinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">FinniganRawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganReaction.html">FinniganReaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRunHeader.html">FinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSampleInfo.html">FinniganSampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScan.html">FinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanCentroidList.html">FinniganScanCentroidList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEvent.html">FinniganScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">FinniganScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventTemplate.html">FinniganScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanIndexEntry.html">FinniganScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanParameters.html">FinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfile.html">FinniganScanProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfileChunk.html">FinniganScanProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSeqRow.html">FinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/APIChanges.html">APIChanges</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Tools</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/tools/Tools.html">Tools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganASInfo.html">UnfinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganError.html">UnfinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganHeader.html">UnfinniganHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganIndex.html">UnfinniganIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganInstID.html">UnfinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganLog.html">UnfinniganLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMethodFile.html">UnfinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzML.html">UnfinniganMzML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzXML.html">UnfinniganMzXML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRawFileInfo.html">UnfinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRunHeader.html">UnfinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScan.html">UnfinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanLight.html">UnfinniganScanLight</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanParameters.html">UnfinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSegments.html">UnfinniganSegments</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSeqRow.html">UnfinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTrailer.html">UnfinniganTrailer</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTuneFile.html">UnfinniganTuneFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/ConversionTools.html">ConversionTools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/HachoirParser.html">HachoirParser</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Hexdump.html">Hexdump</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Iconv.html">Iconv</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/MzXMLUnpack.html">MzXMLUnpack</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnixStrings.html">UnixStrings</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/bgrep.html">bgrep</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Meta</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/meta/WikiSidebar.html">WikiSidebar</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+  </nav>
+</aside>
+
+    <main class="content">
+      <div class="content-header">
+        <label for="nav-toggle" class="menu-button">&#9776; Contents</label>
+      </div>
+      <article class="page-body">
+        
+          <h1 class="page-title">InstrumentLog</h1>
+        
+        <h2 id="purpose">Purpose</h2>
+
+<p>The instrument log typically tracks more than a hundred parameters, including operational data on the pumps, power supplies, ion optics and injectors – everything that may be useful in the auditing of the instrument’s performance.</p>
+
+<p>Each log record is timestamped with the current retention time of the sample.</p>
+
+<p>The content of the record (besides the timestamp) is designed to be decoded with the <a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a> mechanism.</p>
+
+<h2 id="structure">Structure</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><a href="/wiki/structures/GenericDataHeader.html">GenericDataHeader</a> (loaded with <code class="language-plaintext highlighter-rouge">InstrumentLog</code> descriptors)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a> 1 = {timestamp, <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>}</td>
+    </tr>
+    <tr>
+      <td>. . .</td>
+    </tr>
+    <tr>
+      <td><a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a> <em>n</em> = {timestamp, <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The number of records in the instrument log and the seek address of the first <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a> in the file are contained in <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>, which is prat of <a href="/wiki/structures/RunHeader.html">RunHeader</a>.</p>
+
+<p>The log header can only be reached by reading through all the preceding structures, making the address of the first record marginally useful (it may be used in a consistency check, for example).</p>
+
+<h2 id="see-also">See Also</h2>
+
+<p><a href="/wiki/structures/SampleInfo.html">SampleInfo</a></p>
+
+<p><a href="/wiki/overview/FileLayoutOverview.html">The overview of the file layout</a></p>
+
+<h2 id="example-log-record">Example log record</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>API SOURCE</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Source Voltage (kV):</td>
+      <td>4.59612512588501</td>
+    </tr>
+    <tr>
+      <td>Source Current (uA):</td>
+      <td>0.500793814659119</td>
+    </tr>
+    <tr>
+      <td>Vaporizer Thermocouple OK:</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Vaporizer Temp (C):</td>
+      <td>-62.0724639892578</td>
+    </tr>
+    <tr>
+      <td>Sheath Gas Flow Rate ():</td>
+      <td>0.0658124163746834</td>
+    </tr>
+    <tr>
+      <td>Aux Gas Flow Rate():</td>
+      <td>0.161437571048737</td>
+    </tr>
+    <tr>
+      <td>Sweep Gas Flow Rate():</td>
+      <td>0.0483749583363533</td>
+    </tr>
+    <tr>
+      <td>Capillary Temp OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Capillary Voltage (V):</td>
+      <td>27.977201461792</td>
+    </tr>
+    <tr>
+      <td>Capillary Temp (C):</td>
+      <td>275.965301513672</td>
+    </tr>
+    <tr>
+      <td>Tube Lens Voltage (V):</td>
+      <td>104.91024017334</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>VACUUM</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Vacuum OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Gauge Pressure OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Gauge Status:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ion Gauge (E-5 Torr):</td>
+      <td>1.62867569923401</td>
+    </tr>
+    <tr>
+      <td>Convectron Pressure OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Convectron Gauge (Torr):</td>
+      <td>0.942075788974762</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT VACUUM</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT Penning Pressure OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>FT Penning Gauge (E-10 Torr):</td>
+      <td>0.862699747085571</td>
+    </tr>
+    <tr>
+      <td>FT Pirani Gauge 1 (Torr):</td>
+      <td>0.904080867767334</td>
+    </tr>
+    <tr>
+      <td>FT Pirani Gauge 2 (Torr):</td>
+      <td>0.00023712070833426</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>TURBO PUMP</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Status:</td>
+      <td>Running</td>
+    </tr>
+    <tr>
+      <td>Life (hours):</td>
+      <td>18398</td>
+    </tr>
+    <tr>
+      <td>Speed (Hz):</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>Power (Watts):</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>Temperature (C):</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT TURBO PUMP 1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Status:</td>
+      <td>Running</td>
+    </tr>
+    <tr>
+      <td>Life (hours):</td>
+      <td>18285</td>
+    </tr>
+    <tr>
+      <td>Speed (Hz):</td>
+      <td>1499</td>
+    </tr>
+    <tr>
+      <td>Power (Watts):</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT TURBO PUMP 2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Status:</td>
+      <td>Running</td>
+    </tr>
+    <tr>
+      <td>Life (hours):</td>
+      <td>18286</td>
+    </tr>
+    <tr>
+      <td>Speed (Hz):</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Power (Watts):</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT TURBO PUMP 3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Status:</td>
+      <td>Running</td>
+    </tr>
+    <tr>
+      <td>Life (hours):</td>
+      <td>18286</td>
+    </tr>
+    <tr>
+      <td>Speed (Hz):</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Power (Watts):</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ION OPTICS</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Multipole 00 Offset (V):</td>
+      <td>-2.0935959815979</td>
+    </tr>
+    <tr>
+      <td>Lens 0 (V):</td>
+      <td>-1.40861999988556</td>
+    </tr>
+    <tr>
+      <td>Multipole 0 Offset (V):</td>
+      <td>-4.42472410202026</td>
+    </tr>
+    <tr>
+      <td>Lens 1 (V):</td>
+      <td>-14.826416015625</td>
+    </tr>
+    <tr>
+      <td>Gate Lens (V):</td>
+      <td>-64.1004943847656</td>
+    </tr>
+    <tr>
+      <td>Multipole 1 Offset (V):</td>
+      <td>-6.46307992935181</td>
+    </tr>
+    <tr>
+      <td>Multipole RF Amplitude (Vp-p, set point):</td>
+      <td>401.383209228516</td>
+    </tr>
+    <tr>
+      <td>Front Lens (V):</td>
+      <td>-5.41351985931396</td>
+    </tr>
+    <tr>
+      <td>Front Section (V):</td>
+      <td>-8.93693828582764</td>
+    </tr>
+    <tr>
+      <td>Center Section (V):</td>
+      <td>-11.9450664520264</td>
+    </tr>
+    <tr>
+      <td>Back Section (V):</td>
+      <td>-6.9694128036499</td>
+    </tr>
+    <tr>
+      <td>Back Lens (V):</td>
+      <td>0.0239285007119179</td>
+    </tr>
+    <tr>
+      <td>Trap Eject Offset (V):</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>FT Transfer Multipole Offset (V):</td>
+      <td>5.7109375</td>
+    </tr>
+    <tr>
+      <td>FT Transfer Multipole Amplitude (Vp-p):</td>
+      <td>500.000366210938</td>
+    </tr>
+    <tr>
+      <td>FT Gate Lens Offset (V):</td>
+      <td>251.2734375</td>
+    </tr>
+    <tr>
+      <td>FT Trap Lens Offset (V):</td>
+      <td>250.875</td>
+    </tr>
+    <tr>
+      <td>FT Storage Multipole Offset (V):</td>
+      <td>8.0703125</td>
+    </tr>
+    <tr>
+      <td>FT Storage Multipole Amplitude (Vp-p):</td>
+      <td>500.000366210938</td>
+    </tr>
+    <tr>
+      <td>FT Reflect Lens Offset (V):</td>
+      <td>17.96875</td>
+    </tr>
+    <tr>
+      <td>FT Main RF Amplitude (Vp-p):</td>
+      <td>2343.3837890625</td>
+    </tr>
+    <tr>
+      <td>FT Main RF Current (A):</td>
+      <td>0.21084375679493</td>
+    </tr>
+    <tr>
+      <td>FT Main RF Frequency (kHz):</td>
+      <td>3061.25</td>
+    </tr>
+    <tr>
+      <td>FT HV Ion Energy (V):</td>
+      <td>1076.77941894531</td>
+    </tr>
+    <tr>
+      <td>FT HV Lens 1 (V):</td>
+      <td>334.533569335938</td>
+    </tr>
+    <tr>
+      <td>FT HV Lens 2 (V):</td>
+      <td>0.091552697122097</td>
+    </tr>
+    <tr>
+      <td>FT HV Lens 3 (V):</td>
+      <td>-157.012878417969</td>
+    </tr>
+    <tr>
+      <td>FT HV Lens 4 (V):</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FT HV Push Voltage (V):</td>
+      <td>73.7609939575195</td>
+    </tr>
+    <tr>
+      <td>FT HV Pull Voltage (V):</td>
+      <td>-181.121841430664</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MAIN RF</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Standing Wave Ratio OK:</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Main RF Detected (V):</td>
+      <td>-0.000305176014080644</td>
+    </tr>
+    <tr>
+      <td>RF Detector Temp (C):</td>
+      <td>49.5805816650391</td>
+    </tr>
+    <tr>
+      <td>RF Generator Temp (C):</td>
+      <td>30.7983627319336</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ION DETECTION SYSTEM</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dynode Voltage (kV):</td>
+      <td>-14.88831615448</td>
+    </tr>
+    <tr>
+      <td>Multiplier 1 (V):</td>
+      <td>-1036.34606933594</td>
+    </tr>
+    <tr>
+      <td>Multiplier 2 (V):</td>
+      <td>-938.048095703125</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT Analyzer</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT CE Measure Voltage (V):</td>
+      <td>-3450.0146484375</td>
+    </tr>
+    <tr>
+      <td>FT CE Inject Voltage (V):</td>
+      <td>-2801.65209960938</td>
+    </tr>
+    <tr>
+      <td>FT Deflector Measure Voltage (V):</td>
+      <td>296.578887939453</td>
+    </tr>
+    <tr>
+      <td>FT Deflector Inject Voltage (V):</td>
+      <td>2.22785115242004</td>
+    </tr>
+    <tr>
+      <td>FT Analyzer Temp. (<strong>C):</strong></td>
+      <td>26.0009765625</td>
+    </tr>
+    <tr>
+      <td>FT Analyzer TEC Voltage:</td>
+      <td>-0.277099639177322</td>
+    </tr>
+    <tr>
+      <td>FT Analyzer TEC Current:</td>
+      <td>-0.053405798971653</td>
+    </tr>
+    <tr>
+      <td>FT Analyzer TEC Temp. (C):</td>
+      <td>26.551513671875</td>
+    </tr>
+    <tr>
+      <td>FT CE Electronics Temp. (<strong>C):</strong></td>
+      <td>32.8226585388184</td>
+    </tr>
+    <tr>
+      <td>FT CE Electronics TEC Temp. (C):</td>
+      <td>33.4572715759277</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>POWER SUPPLIES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>+5V Supply Voltage (V):</td>
+      <td>4.91913175582886</td>
+    </tr>
+    <tr>
+      <td>-15V Supply Voltage (V):</td>
+      <td>-15.016489982605</td>
+    </tr>
+    <tr>
+      <td>+15V Supply Voltage (V):</td>
+      <td>14.95423412323</td>
+    </tr>
+    <tr>
+      <td>-18V Supply Voltage (V):</td>
+      <td>-17.977352142334</td>
+    </tr>
+    <tr>
+      <td>+18V Supply Voltage (V):</td>
+      <td>17.9929237365723</td>
+    </tr>
+    <tr>
+      <td>+24V Supply Voltage (V):</td>
+      <td>23.6980533599854</td>
+    </tr>
+    <tr>
+      <td>-28V Supply Voltage (V):</td>
+      <td>-28.1818313598633</td>
+    </tr>
+    <tr>
+      <td>+28V Supply Voltage (V):</td>
+      <td>28.2891120910645</td>
+    </tr>
+    <tr>
+      <td>+28V Supply Current (Amps):</td>
+      <td>0.985840022563934</td>
+    </tr>
+    <tr>
+      <td>+36V Supply Voltage (V):</td>
+      <td>36.0968170166016</td>
+    </tr>
+    <tr>
+      <td>-150V Supply Voltage (V):</td>
+      <td>-147.541915893555</td>
+    </tr>
+    <tr>
+      <td>+150V Supply Voltage (V):</td>
+      <td>147.665512084961</td>
+    </tr>
+    <tr>
+      <td>-300V Supply Voltage (V):</td>
+      <td>-296.054290771484</td>
+    </tr>
+    <tr>
+      <td>+300V Supply Voltage (V):</td>
+      <td>295.385955810547</td>
+    </tr>
+    <tr>
+      <td>Ambient Temp. (C):</td>
+      <td>40.5853576660156</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT POWER SUPPLIES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>FT ICB +15 Supply (V):</td>
+      <td>14.6673583984375</td>
+    </tr>
+    <tr>
+      <td>FT ICB -15 Supply (V):</td>
+      <td>-14.85107421875</td>
+    </tr>
+    <tr>
+      <td>FT ICB +10 Supply (V):</td>
+      <td>9.9041748046875</td>
+    </tr>
+    <tr>
+      <td>FT ICB -10 Supply (V):</td>
+      <td>-9.886474609375</td>
+    </tr>
+    <tr>
+      <td>FT ICB +5 Supply (V):</td>
+      <td>4.98474454879761</td>
+    </tr>
+    <tr>
+      <td>FT ICB +3.3 Supply (V):</td>
+      <td>3.30688714981079</td>
+    </tr>
+    <tr>
+      <td>FT ICB +2.5 Supply (V):</td>
+      <td>2.49939155578613</td>
+    </tr>
+    <tr>
+      <td>FT IOS +275 Supply (V):</td>
+      <td>275.366088867188</td>
+    </tr>
+    <tr>
+      <td>FT IOS -275 Supply (V):</td>
+      <td>-275.75</td>
+    </tr>
+    <tr>
+      <td>FT IOS +32 Supply (V):</td>
+      <td>29.4720897674561</td>
+    </tr>
+    <tr>
+      <td>FT IOS +15 Supply (V):</td>
+      <td>15.023193359375</td>
+    </tr>
+    <tr>
+      <td>FT IOS -15 Supply (V):</td>
+      <td>-15.2001953125</td>
+    </tr>
+    <tr>
+      <td>FT IOS +5 Supply (V):</td>
+      <td>4.96246671676636</td>
+    </tr>
+    <tr>
+      <td>FT RF1 Amp. Temp. (C):</td>
+      <td>26.4251899719238</td>
+    </tr>
+    <tr>
+      <td>FT RF1 Amp. Temp. (C):</td>
+      <td>24.9817066192627</td>
+    </tr>
+    <tr>
+      <td>FT TMPC +15V Supply (V):</td>
+      <td>15.03173828125</td>
+    </tr>
+    <tr>
+      <td>FT TMPC -15V Supply (V):</td>
+      <td>-15.0830078125</td>
+    </tr>
+    <tr>
+      <td>FT TMPC HS Temp. (<strong>C):</strong></td>
+      <td>-0.256347686052322</td>
+    </tr>
+    <tr>
+      <td>FT CLTS HS 1 Temp. (C):</td>
+      <td>30.3134708404541</td>
+    </tr>
+    <tr>
+      <td>FT CLTS HS 2 Temp. (<strong>C):</strong></td>
+      <td>30.6072292327881</td>
+    </tr>
+    <tr>
+      <td>FT Water Chiller Flow (L/min):</td>
+      <td>3.14860010147095</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>INSTRUMENT STATUS</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Instrument:</td>
+      <td>On</td>
+    </tr>
+    <tr>
+      <td>Analysis:</td>
+      <td>Acquiring</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>SYRINGE PUMP</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Status:</td>
+      <td>Ready</td>
+    </tr>
+    <tr>
+      <td>Flow Rate (uL/min):</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Syringe Diameter (mm):</td>
+      <td>3.25999999046326</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DIVERT VALVE</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Divert/Inject valve:</td>
+      <td>Inject</td>
+    </tr>
+  </tbody>
+</table>
+
+      </article>
+      <footer class="page-footer">
+        Original author: Gene Selkov Jr &middot;
+        Wiki recovered by Charlotte Dawson &middot;
+        <a href="https://github.com/csdaw/unfinnigan">source</a>
+        
+          &middot;
+          <a href="https://code.google.com/p/unfinnigan/wiki/InstrumentLog">original page</a>
+        
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

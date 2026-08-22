@@ -1,1 +1,10 @@
-theme: jekyll-theme-cayman
+title: unfinnigan wiki
+plugins:
+  - jekyll-relative-links
+
+defaults:
+  - scope:
+      path: "wiki"
+      type: "pages"
+    values:
+      layout: default

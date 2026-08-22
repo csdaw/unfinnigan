@@ -1,0 +1,4155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GenericDataHeader</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+  <div class="page">
+    <aside class="sidebar">
+  <a class="site-title" href="/wiki/">unfinnigan wiki</a>
+  <nav class="nav">
+    
+    
+      
+      
+      <details class="nav-group">
+        <summary>Start here</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/overview/WikiHome.html">WikiHome</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileLayoutOverview.html">FileLayoutOverview</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/FileStructureTOC.html">FileStructureTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/CommonStructures.html">CommonStructures</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/SupportedVersions.html">SupportedVersions</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/overview/Problems.html">Problems</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>File-level structures</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfo.html">ASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ASInfoPreamble.html">ASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/AuditTag.html">AuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/FileHeader.html">FileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InjectionData.html">InjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentMethodData.html">InstrumentMethodData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFile.html">MethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/MethodFileStructure.html">MethodFileStructure</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfo.html">RawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawFileInfoPreamble.html">RawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SeqRow.html">SeqRow</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Index & metadata</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/Error.html">Error</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ErrorLog.html">ErrorLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstID.html">InstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/InstrumentLogRecord.html">InstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RunHeader.html">RunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/SampleInfo.html">SampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TuneFile.html">TuneFile</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Scan data streams</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/FractionCollector.html">FractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PacketHeader.html">PacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakData.html">PeakData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/PeakList.html">PeakList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Profile.html">Profile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ProfileChunk.html">ProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/Reaction.html">Reaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanData.html">ScanData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanDataPacket.html">ScanDataPacket</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEvent.html">ScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventHierarchy.html">ScanEventHierarchy</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventPreamble.html">ScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventStream.html">ScanEventStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanEventTemplate.html">ScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndex.html">ScanIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexEntry.html">ScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanIndexStream.html">ScanIndexStream</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParameters.html">ScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/ScanParametersStream.html">ScanParametersStream</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group" open>
+        <summary>Generic records</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericData.html">GenericData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericDataHeader.html" class="active" aria-current="page">GenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/GenericRecordExample.html">GenericRecordExample</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Shared field types</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/RawBytes.html">RawBytes</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/structures/TimestampWin64.html">TimestampWin64</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Decoder API (Perl)</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/DecoderTOC.html">DecoderTOC</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfo.html">FinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganASInfoPreamble.html">FinniganASInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganAuditTag.html">FinniganAuditTag</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganDecoder.html">FinniganDecoder</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganError.html">FinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFileHeader.html">FinniganFileHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganFractionCollector.html">FinniganFractionCollector</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataDescriptor.html">FinniganGenericDataDescriptor</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericDataHeader.html">FinniganGenericDataHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganGenericRecord.html">FinniganGenericRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInjectionData.html">FinniganInjectionData</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstID.html">FinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganInstrumentLogRecord.html">FinniganInstrumentLogRecord</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganMethodFile.html">FinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganNamespace.html">FinniganNamespace</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DIF.html">FinniganOLE2DIF</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2DirectoryEntry.html">FinniganOLE2DirectoryEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2FAT.html">FinniganOLE2FAT</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2File.html">FinniganOLE2File</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Header.html">FinniganOLE2Header</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganOLE2Property.html">FinniganOLE2Property</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPacketHeader.html">FinniganPacketHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeak.html">FinniganPeak</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganPeaks.html">FinniganPeaks</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfile.html">FinniganProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganProfileChunk.html">FinniganProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfo.html">FinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRawFileInfoPreamble.html">FinniganRawFileInfoPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganReaction.html">FinniganReaction</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganRunHeader.html">FinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSampleInfo.html">FinniganSampleInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScan.html">FinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanCentroidList.html">FinniganScanCentroidList</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEvent.html">FinniganScanEvent</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventPreamble.html">FinniganScanEventPreamble</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanEventTemplate.html">FinniganScanEventTemplate</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanIndexEntry.html">FinniganScanIndexEntry</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanParameters.html">FinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfile.html">FinniganScanProfile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganScanProfileChunk.html">FinniganScanProfileChunk</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/FinniganSeqRow.html">FinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/decoder-api/APIChanges.html">APIChanges</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Tools</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/tools/Tools.html">Tools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganASInfo.html">UnfinniganASInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganError.html">UnfinniganError</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganHeader.html">UnfinniganHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganIndex.html">UnfinniganIndex</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganInstID.html">UnfinniganInstID</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganLog.html">UnfinniganLog</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMethodFile.html">UnfinniganMethodFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzML.html">UnfinniganMzML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganMzXML.html">UnfinniganMzXML</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRawFileInfo.html">UnfinniganRawFileInfo</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganRunHeader.html">UnfinniganRunHeader</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScan.html">UnfinniganScan</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanLight.html">UnfinniganScanLight</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganScanParameters.html">UnfinniganScanParameters</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSegments.html">UnfinniganSegments</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganSeqRow.html">UnfinniganSeqRow</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTrailer.html">UnfinniganTrailer</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnfinniganTuneFile.html">UnfinniganTuneFile</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/ConversionTools.html">ConversionTools</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/HachoirParser.html">HachoirParser</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Hexdump.html">Hexdump</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/Iconv.html">Iconv</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/MzXMLUnpack.html">MzXMLUnpack</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/UnixStrings.html">UnixStrings</a>
+            </li>
+          
+            
+            <li>
+              <a href="/wiki/tools/bgrep.html">bgrep</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+      
+      
+      <details class="nav-group">
+        <summary>Meta</summary>
+        <ul>
+          
+            
+            <li>
+              <a href="/wiki/meta/WikiSidebar.html">WikiSidebar</a>
+            </li>
+          
+        </ul>
+      </details>
+    
+  </nav>
+</aside>
+
+    <main class="content">
+      <div class="content-header">
+        <label for="nav-toggle" class="menu-button">&#9776; Contents</label>
+      </div>
+      <article class="page-body">
+        
+          <h1 class="page-title">GenericDataHeader</h1>
+        
+        <h2 id="purpose">Purpose</h2>
+
+<p><strong>GenericDataHeader</strong> describes the format of all records in a stream. It is an ordered list of <a href="/wiki/structures/GenericDataDescriptor.html">GenericDataDescriptor</a>’s, where each descriptor gives instructions for how to read and interpret a particular element of a record. Records composed using the <strong>GenericDataHeader</strong> mechanism are, similarly, ordered lists, in which every element corresponds to its definition in the GenericDataHeader instance. Such records can be parsed using the <a href="/wiki/structures/GenericRecord.html">GenericRecord</a> object referring to the matching <strong>GenericDataHeader</strong>.</p>
+
+<p>For every type of <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>, there must be an instance of <strong>GenericDataHeader</strong> defined somewhere in the data file, or created in software. This mechanism allows the data streams to be self-descriptive. Usually, but not always, a <strong>GenericDataHeader</strong> immediately precedes a stream of <a href="/wiki/structures/GenericRecord.html">GenericRecord</a>’s in Finnigan data files.</p>
+
+<p>In the earlier versions of the Finnigan file format (from mid-1990’s), generic headers did not exist, which apparently made concurrent maintenance of multiple versions a difficult task. The generic header mechanism can nonetheless be used to read the old files, but the appropriate headers must be created within software (rather than read from the file)</p>
+
+<p>This mechanism is best suited for records with a fixed number of elements (although elements can be of variable length). A typical record has no structure (it cannot be nested, nor can it contain other records), but there is a grouping mechanism in <strong>GenericDataHeader</strong> that allows creation of simple 2-level structures. Grouping of data elements in a record can be achieved with <em>headings</em>, the special zero-length elements of the the generic header.</p>
+
+<p>Unlike other data types, the heading data type (Finnigan type code <code class="language-plaintext highlighter-rouge">0x0</code>) is not stored in the stream’s records. It is only stored in the header itself. Because the header is scanned along with each new record being parsed (thus directing the parser), when the the parser encounters a heading among the data descriptors in the header, it can change its state and treat all subsequent record elements differently – for example, it can put them in a different container.</p>
+
+<h2 id="structure">Structure</h2>
+
+<p>The structure of <strong>GenericDataHeader</strong> is very simple: it consists of a series of descriptors whose length is indicated by a 32-bit integer number at the head of thhe structure.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>typedef {
+   UInt32 n,  /* the number of data elements in each instance of GenericRecord */
+   GenericDataDescriptor[] descriptor
+} GenericDataHeader;
+</code></pre></div></div>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>This python implementation of <strong>GenericDataHeader</strong> is somewhat involved, because it needs to keep the data descriptors’ labels compatible with Hachoir. In order to guarantee uniqueness of the parse tree path from the root node to every element of the header, it concatenates each descriptor’s label with with the preceding heading, if such is encountered.</p>
+
+<p>This is done because in some Finnigan headers, identically named parameters can occur under different headings.</p>
+
+<p>For example, in the File header in V.57 of the LTQ-FT file, the element labelled</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Multipole 11 (V):
+</code></pre></div></div>
+
+<p>occurs twice: once following the <code class="language-plaintext highlighter-rouge">POSITIVE POLARITY</code> heading, and the second time following <code class="language-plaintext highlighter-rouge">NEGATIVE POLARITY</code>. Registering these labels with Hachoir more than once results in warnings during parsing and arbitrary assignment of numeric suffixes. Concatenating them with the heading label solves both problems.</p>
+
+<p>This is a good example of how headings can be interpreted as containers by directing transitions in the parser, although the code for doing so is admittedly ugly. Because the heading mechanism allows to implement only a 2-level hierarchy (unless the content of the heading labels can be consulted to create a deeper nesting), concatenating the heading and the data descriptor’s label only solves the problem of same labels occurring under different headings. Because I had seen duplicate instances of the same label under the same heading, I had to augment the parser to handle that by attaching a suffix to one of the labels. And even so, it does not handle more than duplicate occurrences.</p>
+
+<p>The real life can be ugly.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class GenericDataHeader(FieldSet):
+    endian = LITTLE_ENDIAN
+    keys = {}
+
+    def createFields(self):
+        yield UInt32(self, "n", "Number of entries")
+        group = None
+        for index in range(1, self["n"].value + 1):
+            key = "entry[%s]" % index
+            yield GenericDataDescriptor(self, key)
+
+            old_label = self[key].ascii_label
+            if self[key]["type"].value:
+                if old_label:
+                    if group:
+                        label = group + "|" + old_label
+                    else:
+                        label = old_label
+                    if self.keys.has_key(label):
+                        if group:
+                            label = self[key].ascii_label = group + "|" + old_label + ' [bis]'
+                        else:
+                            label = self[key].ascii_label = old_label + ' [bis]'
+                    else:
+                        self[key].ascii_label = label
+                    self.keys[label] = 1
+            else:
+                if self[key].ascii_label == "None":
+                    pass
+                else:
+                    group = old_label
+</code></pre></div></div>
+
+<h2 id="examples">Examples</h2>
+
+<ul>
+  <li>
+    <p><a href="/wiki/structures/GenericRecordExample.html">A complete example</a> of a generic header and a corressponding record decoded with it.</p>
+  </li>
+  <li>
+    <p>An example of the data header in the <a href="/wiki/structures/InstrumentLog.html">InstrumentLog</a> stream:</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>offset</th>
+      <th>size</th>
+      <th>type</th>
+      <th>key</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>785078</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">n</code></td>
+      <td><code class="language-plaintext highlighter-rouge">158</code></td>
+    </tr>
+    <tr>
+      <td>785082</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785086</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785090</td>
+      <td>24</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">API SOURCE</code></td>
+    </tr>
+    <tr>
+      <td>785114</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785118</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785122</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Source Voltage (kV):</code></td>
+    </tr>
+    <tr>
+      <td>785166</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785170</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785174</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Source Current (uA):</code></td>
+    </tr>
+    <tr>
+      <td>785218</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>785222</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785226</td>
+      <td>56</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Vaporizer Thermocouple OK:</code></td>
+    </tr>
+    <tr>
+      <td>785282</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785286</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785290</td>
+      <td>42</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Vaporizer Temp (C):</code></td>
+    </tr>
+    <tr>
+      <td>785332</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785336</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785340</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Sheath Gas Flow Rate ():</code></td>
+    </tr>
+    <tr>
+      <td>785392</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785396</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785400</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Aux Gas Flow Rate():</code></td>
+    </tr>
+    <tr>
+      <td>785444</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785448</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785452</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Sweep Gas Flow Rate():</code></td>
+    </tr>
+    <tr>
+      <td>785500</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>785504</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785508</td>
+      <td>40</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Capillary Temp OK:</code></td>
+    </tr>
+    <tr>
+      <td>785548</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785552</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785556</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Capillary Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>785604</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785608</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785612</td>
+      <td>42</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Capillary Temp (C):</code></td>
+    </tr>
+    <tr>
+      <td>785654</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785658</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785662</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Tube Lens Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>785710</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785714</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785718</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>785722</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785726</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785730</td>
+      <td>16</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">VACUUM</code></td>
+    </tr>
+    <tr>
+      <td>785746</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>785750</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785754</td>
+      <td>24</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Vacuum OK:</code></td>
+    </tr>
+    <tr>
+      <td>785778</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>785782</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785786</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Ion Gauge Pressure OK:</code></td>
+    </tr>
+    <tr>
+      <td>785834</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">4</code></td>
+    </tr>
+    <tr>
+      <td>785838</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785842</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Ion Gauge Status:</code></td>
+    </tr>
+    <tr>
+      <td>785880</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785884</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>785888</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Ion Gauge (E-5 Torr):</code></td>
+    </tr>
+    <tr>
+      <td>785934</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>785938</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>785942</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Convectron Pressure OK:</code></td>
+    </tr>
+    <tr>
+      <td>785992</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>785996</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>786000</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Convectron Gauge (Torr):</code></td>
+    </tr>
+    <tr>
+      <td>786052</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786056</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786060</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>786064</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786068</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786072</td>
+      <td>22</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT VACUUM</code></td>
+    </tr>
+    <tr>
+      <td>786094</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>786098</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786102</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Penning Pressure OK:</code></td>
+    </tr>
+    <tr>
+      <td>786152</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>786156</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>786160</td>
+      <td>62</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Penning Gauge (E-10 Torr):</code></td>
+    </tr>
+    <tr>
+      <td>786222</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>786226</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>786230</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Pirani Gauge 1 (Torr):</code></td>
+    </tr>
+    <tr>
+      <td>786284</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>786288</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>786292</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Pirani Gauge 2 (Torr):</code></td>
+    </tr>
+    <tr>
+      <td>786346</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786350</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786354</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>786358</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786362</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786366</td>
+      <td>24</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TURBO PUMP</code></td>
+    </tr>
+    <tr>
+      <td>786390</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>786394</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">14</code></td>
+    </tr>
+    <tr>
+      <td>786398</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Status:</code></td>
+    </tr>
+    <tr>
+      <td>786416</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786420</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786424</td>
+      <td>30</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Life (hours):</code></td>
+    </tr>
+    <tr>
+      <td>786454</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786458</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786462</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Speed (Hz):</code></td>
+    </tr>
+    <tr>
+      <td>786488</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">6</code></td>
+    </tr>
+    <tr>
+      <td>786492</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786496</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Power (Watts):</code></td>
+    </tr>
+    <tr>
+      <td>786528</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>786532</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>786536</td>
+      <td>36</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Temperature (C):</code></td>
+    </tr>
+    <tr>
+      <td>786572</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786576</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786580</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>786584</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786588</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786592</td>
+      <td>34</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TURBO PUMP 1</code></td>
+    </tr>
+    <tr>
+      <td>786626</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>786630</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">14</code></td>
+    </tr>
+    <tr>
+      <td>786634</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Status:</code></td>
+    </tr>
+    <tr>
+      <td>786652</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786656</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786660</td>
+      <td>30</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Life (hours):</code></td>
+    </tr>
+    <tr>
+      <td>786690</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786694</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786698</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Speed (Hz):</code></td>
+    </tr>
+    <tr>
+      <td>786724</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">6</code></td>
+    </tr>
+    <tr>
+      <td>786728</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786732</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Power (Watts):</code></td>
+    </tr>
+    <tr>
+      <td>786764</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786768</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786772</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>786776</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786780</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786784</td>
+      <td>34</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TURBO PUMP 2</code></td>
+    </tr>
+    <tr>
+      <td>786818</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>786822</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">14</code></td>
+    </tr>
+    <tr>
+      <td>786826</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Status:</code></td>
+    </tr>
+    <tr>
+      <td>786844</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786848</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786852</td>
+      <td>30</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Life (hours):</code></td>
+    </tr>
+    <tr>
+      <td>786882</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>786886</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786890</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Speed (Hz):</code></td>
+    </tr>
+    <tr>
+      <td>786916</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">6</code></td>
+    </tr>
+    <tr>
+      <td>786920</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786924</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Power (Watts):</code></td>
+    </tr>
+    <tr>
+      <td>786956</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786960</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786964</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>786968</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786972</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>786976</td>
+      <td>34</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TURBO PUMP 3</code></td>
+    </tr>
+    <tr>
+      <td>787010</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>787014</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">14</code></td>
+    </tr>
+    <tr>
+      <td>787018</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Status:</code></td>
+    </tr>
+    <tr>
+      <td>787036</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>787040</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787044</td>
+      <td>30</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Life (hours):</code></td>
+    </tr>
+    <tr>
+      <td>787074</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">9</code></td>
+    </tr>
+    <tr>
+      <td>787078</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787082</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Speed (Hz):</code></td>
+    </tr>
+    <tr>
+      <td>787108</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">6</code></td>
+    </tr>
+    <tr>
+      <td>787112</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787116</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Power (Watts):</code></td>
+    </tr>
+    <tr>
+      <td>787148</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787152</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787156</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>787160</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787164</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>787168</td>
+      <td>24</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ION OPTICS</code></td>
+    </tr>
+    <tr>
+      <td>787192</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787196</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787200</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multipole 00 Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>787252</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787256</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787260</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Lens 0 (V):</code></td>
+    </tr>
+    <tr>
+      <td>787286</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787290</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787294</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multipole 0 Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>787344</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787348</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787352</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Lens 1 (V):</code></td>
+    </tr>
+    <tr>
+      <td>787378</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787382</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787386</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Gate Lens (V):</code></td>
+    </tr>
+    <tr>
+      <td>787418</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787422</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787426</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multipole 1 Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>787476</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787480</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787484</td>
+      <td>86</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multipole RF Amplitude (Vp-p, set point):</code></td>
+    </tr>
+    <tr>
+      <td>787570</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787574</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787578</td>
+      <td>34</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Front Lens (V):</code></td>
+    </tr>
+    <tr>
+      <td>787612</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787616</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787620</td>
+      <td>40</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Front Section (V):</code></td>
+    </tr>
+    <tr>
+      <td>787660</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787664</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787668</td>
+      <td>42</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Center Section (V):</code></td>
+    </tr>
+    <tr>
+      <td>787710</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787714</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787718</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Back Section (V):</code></td>
+    </tr>
+    <tr>
+      <td>787756</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787760</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787764</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Back Lens (V):</code></td>
+    </tr>
+    <tr>
+      <td>787796</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787800</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787804</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Trap Eject Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>787852</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787856</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787860</td>
+      <td>70</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Transfer Multipole Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>787930</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>787934</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>787938</td>
+      <td>82</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Transfer Multipole Amplitude (Vp-p):</code></td>
+    </tr>
+    <tr>
+      <td>788020</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788024</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788028</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Gate Lens Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>788080</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788084</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788088</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Trap Lens Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>788140</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788144</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788148</td>
+      <td>68</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Storage Multipole Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>788216</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788220</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788224</td>
+      <td>80</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Storage Multipole Amplitude (Vp-p):</code></td>
+    </tr>
+    <tr>
+      <td>788304</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788308</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788312</td>
+      <td>58</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Reflect Lens Offset (V):</code></td>
+    </tr>
+    <tr>
+      <td>788370</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788374</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788378</td>
+      <td>60</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Main RF Amplitude (Vp-p):</code></td>
+    </tr>
+    <tr>
+      <td>788438</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788442</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788446</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Main RF Current (A):</code></td>
+    </tr>
+    <tr>
+      <td>788496</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788500</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788504</td>
+      <td>58</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Main RF Frequency (kHz):</code></td>
+    </tr>
+    <tr>
+      <td>788562</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788566</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788570</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Ion Energy (V):</code></td>
+    </tr>
+    <tr>
+      <td>788616</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788620</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788624</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Lens 1 (V):</code></td>
+    </tr>
+    <tr>
+      <td>788662</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788666</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788670</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Lens 2 (V):</code></td>
+    </tr>
+    <tr>
+      <td>788708</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788712</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788716</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Lens 3 (V):</code></td>
+    </tr>
+    <tr>
+      <td>788754</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788758</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788762</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Lens 4 (V):</code></td>
+    </tr>
+    <tr>
+      <td>788800</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788804</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788808</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Push Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>788858</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>788862</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>788866</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT HV Pull Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>788916</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>788920</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>788924</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>788928</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>788932</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>788936</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">MAIN RF</code></td>
+    </tr>
+    <tr>
+      <td>788954</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">3</code></td>
+    </tr>
+    <tr>
+      <td>788958</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>788962</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Standing Wave Ratio OK:</code></td>
+    </tr>
+    <tr>
+      <td>789012</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789016</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789020</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Main RF Detected (V):</code></td>
+    </tr>
+    <tr>
+      <td>789066</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789070</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789074</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">RF Detector Temp (C):</code></td>
+    </tr>
+    <tr>
+      <td>789120</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789124</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789128</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">RF Generator Temp (C):</code></td>
+    </tr>
+    <tr>
+      <td>789176</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789180</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789184</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>789188</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789192</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789196</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ION DETECTION SYSTEM</code></td>
+    </tr>
+    <tr>
+      <td>789240</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789244</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789248</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Dynode Voltage (kV):</code></td>
+    </tr>
+    <tr>
+      <td>789292</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789296</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789300</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multiplier 1 (V):</code></td>
+    </tr>
+    <tr>
+      <td>789338</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789342</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789346</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multiplier 2 (V):</code></td>
+    </tr>
+    <tr>
+      <td>789384</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789388</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789392</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>789396</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789400</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>789404</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Analyzer</code></td>
+    </tr>
+    <tr>
+      <td>789430</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789434</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789438</td>
+      <td>56</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CE Measure Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>789494</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789498</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789502</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CE Inject Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>789556</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789560</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789564</td>
+      <td>70</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Deflector Measure Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>789634</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789638</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789642</td>
+      <td>68</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Deflector Inject Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>789710</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789714</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789718</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Analyzer Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>789768</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789772</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789776</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Analyzer TEC Voltage:</code></td>
+    </tr>
+    <tr>
+      <td>789828</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789832</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789836</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Analyzer TEC Current:</code></td>
+    </tr>
+    <tr>
+      <td>789888</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789892</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789896</td>
+      <td>58</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Analyzer TEC Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>789954</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>789958</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>789962</td>
+      <td>62</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CE Electronics Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>790024</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790028</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790032</td>
+      <td>70</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CE Electronics TEC Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>790102</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>790106</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>790110</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>790114</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>790118</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>790122</td>
+      <td>32</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">POWER SUPPLIES</code></td>
+    </tr>
+    <tr>
+      <td>790154</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790158</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790162</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+5V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790212</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790216</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790220</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-15V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790272</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790276</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790280</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+15V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790332</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790336</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790340</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-18V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790392</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790396</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790400</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+18V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790452</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790456</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790460</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+24V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790512</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790516</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790520</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-28V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790572</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790576</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790580</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+28V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790632</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790636</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790640</td>
+      <td>58</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+28V Supply Current (Amps):</code></td>
+    </tr>
+    <tr>
+      <td>790698</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790702</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790706</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+36V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790758</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790762</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790766</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-150V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790820</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790824</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790828</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+150V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790882</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790886</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790890</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">-300V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>790944</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>790948</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>790952</td>
+      <td>54</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">+300V Supply Voltage (V):</code></td>
+    </tr>
+    <tr>
+      <td>791006</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791010</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791014</td>
+      <td>40</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Ambient Temp. (C):</code></td>
+    </tr>
+    <tr>
+      <td>791054</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>791058</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>791062</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>791066</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>791070</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>791074</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT POWER SUPPLIES</code></td>
+    </tr>
+    <tr>
+      <td>791112</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791116</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791120</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB +15 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791168</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791172</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791176</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB -15 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791224</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791228</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791232</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB +10 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791280</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791284</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791288</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB -10 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791336</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791340</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791344</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB +5 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791390</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791394</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791398</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB +3.3 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791448</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791452</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791456</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT ICB +2.5 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791506</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791510</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791514</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS +275 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791564</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791568</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791572</td>
+      <td>50</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS -275 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791622</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791626</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791630</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS +32 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791678</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791682</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791686</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS +15 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791734</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791738</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791742</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS -15 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791790</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791794</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791798</td>
+      <td>46</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT IOS +5 Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>791844</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791848</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791852</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT RF1 Amp. Temp. (C):</code></td>
+    </tr>
+    <tr>
+      <td>791900</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791904</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791908</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT RF1 Amp. Temp. (C):</code></td>
+    </tr>
+    <tr>
+      <td>791956</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>791960</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>791964</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TMPC +15V Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>792016</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792020</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792024</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TMPC -15V Supply (V):</code></td>
+    </tr>
+    <tr>
+      <td>792076</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792080</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792084</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT TMPC HS Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>792132</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792136</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792140</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CLTS HS 1 Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>792192</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792196</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792200</td>
+      <td>52</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT CLTS HS 2 Temp. (\*C):</code></td>
+    </tr>
+    <tr>
+      <td>792252</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792256</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792260</td>
+      <td>64</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FT Water Chiller Flow (L/min):</code></td>
+    </tr>
+    <tr>
+      <td>792324</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792328</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792332</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>792336</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792340</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792344</td>
+      <td>38</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">INSTRUMENT STATUS</code></td>
+    </tr>
+    <tr>
+      <td>792382</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>792386</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792390</td>
+      <td>26</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Instrument:</code></td>
+    </tr>
+    <tr>
+      <td>792416</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>792420</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">15</code></td>
+    </tr>
+    <tr>
+      <td>792424</td>
+      <td>22</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Analysis:</code></td>
+    </tr>
+    <tr>
+      <td>792446</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792450</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792454</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>792458</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792462</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792466</td>
+      <td>28</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SYRINGE PUMP</code></td>
+    </tr>
+    <tr>
+      <td>792494</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>792498</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">14</code></td>
+    </tr>
+    <tr>
+      <td>792502</td>
+      <td>18</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Status:</code></td>
+    </tr>
+    <tr>
+      <td>792520</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792524</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792528</td>
+      <td>42</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Flow Rate (uL/min):</code></td>
+    </tr>
+    <tr>
+      <td>792570</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">10</code></td>
+    </tr>
+    <tr>
+      <td>792574</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+    </tr>
+    <tr>
+      <td>792578</td>
+      <td>48</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Syringe Diameter (mm):</code></td>
+    </tr>
+    <tr>
+      <td>792626</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792630</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792634</td>
+      <td>4</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td>``</td>
+    </tr>
+    <tr>
+      <td>792638</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792642</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">0</code></td>
+    </tr>
+    <tr>
+      <td>792646</td>
+      <td>28</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DIVERT VALVE</code></td>
+    </tr>
+    <tr>
+      <td>792674</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">13</code></td>
+    </tr>
+    <tr>
+      <td>792678</td>
+      <td>4</td>
+      <td>UInt32</td>
+      <td><code class="language-plaintext highlighter-rouge">length</code></td>
+      <td><code class="language-plaintext highlighter-rouge">7</code></td>
+    </tr>
+    <tr>
+      <td>792682</td>
+      <td>44</td>
+      <td><a href="/wiki/structures/PascalStringWin32.html">PascalStringWin32</a></td>
+      <td><code class="language-plaintext highlighter-rouge">label</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Divert/Inject valve:</code></td>
+    </tr>
+  </tbody>
+</table>
+
+      </article>
+      <footer class="page-footer">
+        Original author: Gene Selkov Jr &middot;
+        Wiki recovered by Charlotte Dawson &middot;
+        <a href="https://github.com/csdaw/unfinnigan">source</a>
+        
+          &middot;
+          <a href="https://code.google.com/p/unfinnigan/wiki/GenericDataHeader">original page</a>
+        
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

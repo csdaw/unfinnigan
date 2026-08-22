@@ -1,0 +1,270 @@
+- title: Start here
+  items:
+    - name: WikiHome
+      path: wiki/overview/WikiHome
+    - name: FileLayoutOverview
+      path: wiki/overview/FileLayoutOverview
+    - name: FileStructureTOC
+      path: wiki/overview/FileStructureTOC
+    - name: CommonStructures
+      path: wiki/overview/CommonStructures
+    - name: SupportedVersions
+      path: wiki/overview/SupportedVersions
+    - name: Problems
+      path: wiki/overview/Problems
+
+- title: File-level structures
+  items:
+    - name: ASInfo
+      path: wiki/structures/ASInfo
+    - name: ASInfoPreamble
+      path: wiki/structures/ASInfoPreamble
+    - name: AuditTag
+      path: wiki/structures/AuditTag
+    - name: FileHeader
+      path: wiki/structures/FileHeader
+    - name: InjectionData
+      path: wiki/structures/InjectionData
+    - name: InstrumentMethodData
+      path: wiki/structures/InstrumentMethodData
+    - name: MethodFile
+      path: wiki/structures/MethodFile
+    - name: MethodFileStructure
+      path: wiki/structures/MethodFileStructure
+    - name: RawFileInfo
+      path: wiki/structures/RawFileInfo
+    - name: RawFileInfoPreamble
+      path: wiki/structures/RawFileInfoPreamble
+    - name: SeqRow
+      path: wiki/structures/SeqRow
+
+- title: Index & metadata
+  items:
+    - name: Error
+      path: wiki/structures/Error
+    - name: ErrorLog
+      path: wiki/structures/ErrorLog
+    - name: InstID
+      path: wiki/structures/InstID
+    - name: InstrumentLog
+      path: wiki/structures/InstrumentLog
+    - name: InstrumentLogRecord
+      path: wiki/structures/InstrumentLogRecord
+    - name: RunHeader
+      path: wiki/structures/RunHeader
+    - name: SampleInfo
+      path: wiki/structures/SampleInfo
+    - name: TuneFile
+      path: wiki/structures/TuneFile
+
+- title: Scan data streams
+  items:
+    - name: FractionCollector
+      path: wiki/structures/FractionCollector
+    - name: PacketHeader
+      path: wiki/structures/PacketHeader
+    - name: PeakData
+      path: wiki/structures/PeakData
+    - name: PeakList
+      path: wiki/structures/PeakList
+    - name: Profile
+      path: wiki/structures/Profile
+    - name: ProfileChunk
+      path: wiki/structures/ProfileChunk
+    - name: Reaction
+      path: wiki/structures/Reaction
+    - name: ScanData
+      path: wiki/structures/ScanData
+    - name: ScanDataPacket
+      path: wiki/structures/ScanDataPacket
+    - name: ScanEvent
+      path: wiki/structures/ScanEvent
+    - name: ScanEventHierarchy
+      path: wiki/structures/ScanEventHierarchy
+    - name: ScanEventPreamble
+      path: wiki/structures/ScanEventPreamble
+    - name: ScanEventStream
+      path: wiki/structures/ScanEventStream
+    - name: ScanEventTemplate
+      path: wiki/structures/ScanEventTemplate
+    - name: ScanIndex
+      path: wiki/structures/ScanIndex
+    - name: ScanIndexEntry
+      path: wiki/structures/ScanIndexEntry
+    - name: ScanIndexStream
+      path: wiki/structures/ScanIndexStream
+    - name: ScanParameters
+      path: wiki/structures/ScanParameters
+    - name: ScanParametersStream
+      path: wiki/structures/ScanParametersStream
+
+- title: Generic records
+  items:
+    - name: GenericData
+      path: wiki/structures/GenericData
+    - name: GenericDataDescriptor
+      path: wiki/structures/GenericDataDescriptor
+    - name: GenericDataHeader
+      path: wiki/structures/GenericDataHeader
+    - name: GenericRecord
+      path: wiki/structures/GenericRecord
+    - name: GenericRecordExample
+      path: wiki/structures/GenericRecordExample
+
+- title: Shared field types
+  items:
+    - name: PascalStringWin32
+      path: wiki/structures/PascalStringWin32
+    - name: RawBytes
+      path: wiki/structures/RawBytes
+    - name: TimestampWin64
+      path: wiki/structures/TimestampWin64
+
+- title: Decoder API (Perl)
+  items:
+    - name: DecoderTOC
+      path: wiki/decoder-api/DecoderTOC
+    - name: FinniganASInfo
+      path: wiki/decoder-api/FinniganASInfo
+    - name: FinniganASInfoPreamble
+      path: wiki/decoder-api/FinniganASInfoPreamble
+    - name: FinniganAuditTag
+      path: wiki/decoder-api/FinniganAuditTag
+    - name: FinniganDecoder
+      path: wiki/decoder-api/FinniganDecoder
+    - name: FinniganError
+      path: wiki/decoder-api/FinniganError
+    - name: FinniganFileHeader
+      path: wiki/decoder-api/FinniganFileHeader
+    - name: FinniganFractionCollector
+      path: wiki/decoder-api/FinniganFractionCollector
+    - name: FinniganGenericDataDescriptor
+      path: wiki/decoder-api/FinniganGenericDataDescriptor
+    - name: FinniganGenericDataHeader
+      path: wiki/decoder-api/FinniganGenericDataHeader
+    - name: FinniganGenericRecord
+      path: wiki/decoder-api/FinniganGenericRecord
+    - name: FinniganInjectionData
+      path: wiki/decoder-api/FinniganInjectionData
+    - name: FinniganInstID
+      path: wiki/decoder-api/FinniganInstID
+    - name: FinniganInstrumentLogRecord
+      path: wiki/decoder-api/FinniganInstrumentLogRecord
+    - name: FinniganMethodFile
+      path: wiki/decoder-api/FinniganMethodFile
+    - name: FinniganNamespace
+      path: wiki/decoder-api/FinniganNamespace
+    - name: FinniganOLE2DIF
+      path: wiki/decoder-api/FinniganOLE2DIF
+    - name: FinniganOLE2DirectoryEntry
+      path: wiki/decoder-api/FinniganOLE2DirectoryEntry
+    - name: FinniganOLE2FAT
+      path: wiki/decoder-api/FinniganOLE2FAT
+    - name: FinniganOLE2File
+      path: wiki/decoder-api/FinniganOLE2File
+    - name: FinniganOLE2Header
+      path: wiki/decoder-api/FinniganOLE2Header
+    - name: FinniganOLE2Property
+      path: wiki/decoder-api/FinniganOLE2Property
+    - name: FinniganPacketHeader
+      path: wiki/decoder-api/FinniganPacketHeader
+    - name: FinniganPeak
+      path: wiki/decoder-api/FinniganPeak
+    - name: FinniganPeaks
+      path: wiki/decoder-api/FinniganPeaks
+    - name: FinniganProfile
+      path: wiki/decoder-api/FinniganProfile
+    - name: FinniganProfileChunk
+      path: wiki/decoder-api/FinniganProfileChunk
+    - name: FinniganRawFileInfo
+      path: wiki/decoder-api/FinniganRawFileInfo
+    - name: FinniganRawFileInfoPreamble
+      path: wiki/decoder-api/FinniganRawFileInfoPreamble
+    - name: FinniganReaction
+      path: wiki/decoder-api/FinniganReaction
+    - name: FinniganRunHeader
+      path: wiki/decoder-api/FinniganRunHeader
+    - name: FinniganSampleInfo
+      path: wiki/decoder-api/FinniganSampleInfo
+    - name: FinniganScan
+      path: wiki/decoder-api/FinniganScan
+    - name: FinniganScanCentroidList
+      path: wiki/decoder-api/FinniganScanCentroidList
+    - name: FinniganScanEvent
+      path: wiki/decoder-api/FinniganScanEvent
+    - name: FinniganScanEventPreamble
+      path: wiki/decoder-api/FinniganScanEventPreamble
+    - name: FinniganScanEventTemplate
+      path: wiki/decoder-api/FinniganScanEventTemplate
+    - name: FinniganScanIndexEntry
+      path: wiki/decoder-api/FinniganScanIndexEntry
+    - name: FinniganScanParameters
+      path: wiki/decoder-api/FinniganScanParameters
+    - name: FinniganScanProfile
+      path: wiki/decoder-api/FinniganScanProfile
+    - name: FinniganScanProfileChunk
+      path: wiki/decoder-api/FinniganScanProfileChunk
+    - name: FinniganSeqRow
+      path: wiki/decoder-api/FinniganSeqRow
+    - name: APIChanges
+      path: wiki/decoder-api/APIChanges
+
+- title: Tools
+  items:
+    - name: Tools
+      path: wiki/tools/Tools
+    - name: UnfinniganASInfo
+      path: wiki/tools/UnfinniganASInfo
+    - name: UnfinniganError
+      path: wiki/tools/UnfinniganError
+    - name: UnfinniganHeader
+      path: wiki/tools/UnfinniganHeader
+    - name: UnfinniganIndex
+      path: wiki/tools/UnfinniganIndex
+    - name: UnfinniganInstID
+      path: wiki/tools/UnfinniganInstID
+    - name: UnfinniganLog
+      path: wiki/tools/UnfinniganLog
+    - name: UnfinniganMethodFile
+      path: wiki/tools/UnfinniganMethodFile
+    - name: UnfinniganMzML
+      path: wiki/tools/UnfinniganMzML
+    - name: UnfinniganMzXML
+      path: wiki/tools/UnfinniganMzXML
+    - name: UnfinniganRawFileInfo
+      path: wiki/tools/UnfinniganRawFileInfo
+    - name: UnfinniganRunHeader
+      path: wiki/tools/UnfinniganRunHeader
+    - name: UnfinniganScan
+      path: wiki/tools/UnfinniganScan
+    - name: UnfinniganScanLight
+      path: wiki/tools/UnfinniganScanLight
+    - name: UnfinniganScanParameters
+      path: wiki/tools/UnfinniganScanParameters
+    - name: UnfinniganSegments
+      path: wiki/tools/UnfinniganSegments
+    - name: UnfinniganSeqRow
+      path: wiki/tools/UnfinniganSeqRow
+    - name: UnfinniganTrailer
+      path: wiki/tools/UnfinniganTrailer
+    - name: UnfinniganTuneFile
+      path: wiki/tools/UnfinniganTuneFile
+    - name: ConversionTools
+      path: wiki/tools/ConversionTools
+    - name: HachoirParser
+      path: wiki/tools/HachoirParser
+    - name: Hexdump
+      path: wiki/tools/Hexdump
+    - name: Iconv
+      path: wiki/tools/Iconv
+    - name: MzXMLUnpack
+      path: wiki/tools/MzXMLUnpack
+    - name: UnixStrings
+      path: wiki/tools/UnixStrings
+    - name: bgrep
+      path: wiki/tools/bgrep
+
+- title: Meta
+  items:
+    - name: WikiSidebar
+      path: wiki/meta/WikiSidebar
