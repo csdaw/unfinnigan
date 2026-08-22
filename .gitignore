@@ -20,3 +20,6 @@ perl/Finnigan/MYMETA.*
 .vscode/
 .idea/
 *.swp
+# pixi environments
+.pixi/*
+!.pixi/config.toml
