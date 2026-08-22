@@ -1,0 +1,22 @@
+{
+  "http://chart.apis.google.com/chart?cht=tx&chl=M/z%20=%20A%20%2B%20\\frac{B}{f^2}%20%2B%20\\frac{C}{f^4}&nonsense=.png": "images/profile-formula-2.png",
+  "http://chart.apis.google.com/chart?cht=tx&chl=M/z%20=%20A%20%2B%20\\frac{B}{f}%20%2B%20\\frac{C}{f^2}&nonsense=.png": "images/profile-formula-1.png",
+  "http://chart.apis.google.com/chart?cht=tx&chl=M/z%20=%20\\frac{C}{f^2}%20%2B%20\\frac{D}{f^4}&nonsense=.png": "images/profile-formula-3.png",
+  "http://chart.apis.google.com/chart?chxt=y%2Cx&chd=s%3A___________________________________________________________________________________________________________________________________________KOPNI___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________LQVZaYcnz76uYQmuhNE___MUabYPD__FNURI_____________________________________________________________________________________________________________________________________________________________________________________________________________&chxp=0%2C6000%2C12000%7C1%2C325.0%2C325.24069214%2C325.8&chxr=0%2C0%2C13000%7C1%2C325.0%2C325.8&chco=a0a0d0&chbh=a&chs=800x150&cht=bvg&chxl=0%3A%7C6000%7C12000%7C1%3A%7C325.0%7C325.24069214%7C325.8&nonsense=.png": "images/problems-chart-2.png",
+  "http://chart.apis.google.com/chart?chxt=y%2Cx&chd=s%3A___________________________________________________________________________________________________________________________________________________________________________________________________BNUVTSQQZp053ysniaN_NUPF_______________________________________________________________________________________________________________________________________________________________________&chxp=0%2C1000%2C2000%2C3000%7C1%2C362.5%2C362.749%2C363.0&chxr=0%2C0%2C3000%7C1%2C362.5%2C363.0&chco=a0a0d0&chbh=a&chs=800x150&cht=bvg&chxl=0%3A%7C1000%7C2000%7C3000%7C1%3A%7C362.5%7C362.749%7C363.0&nonsense=.png": "images/problems-chart-1.png",
+  "http://chart.apis.google.com/chart?chxt=y,x,x,y&chd=s%3A___bo02tb_________________________________________________________________________________________Ujy41th___&chxp=0%2C0%2C100%2C200%7C1%2C38.5%2C43.5%2C132.5%2C139&chxr=0%2C0%2C250%7C1%2C35%2C142&chco=a0a0d0&chbh=a&chs=500x150&cht=bvg&chxl=0%3A%7C0%7C100%7C200%7C1%3A%7C38%7C43%7C133%7C139|2:|||||||||||||||||||||||||||||||||||||||||||||||||||bins||3:||||||||intensity|&nonsense=.png": "images/profile-chart-1.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/method_file_structure.png": "images/method_file_structure.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/readw-missing-peaks.png": "images/readw-missing-peaks.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/screenshot-okteta-drugx_15.raw.png": "images/screenshot-okteta-drugx_15.raw.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/structure-overview.png": "images/structure-overview.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/structure-overview.svg": "images/structure-overview.svg",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-1.png": "images/uf-mzxml-readw-diff-1.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-10119.png": "images/uf-mzxml-readw-diff-10119.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-2.png": "images/uf-mzxml-readw-diff-2.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-3.png": "images/uf-mzxml-readw-diff-3.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-4.png": "images/uf-mzxml-readw-diff-4.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-5216.png": "images/uf-mzxml-readw-diff-5216.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-6.png": "images/uf-mzxml-readw-diff-6.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-6a.png": "images/uf-mzxml-readw-diff-6a.png",
+  "http://wiki.unfinnigan.googlecode.com/hg/images/uf-mzxml-readw-diff-7.png": "images/uf-mzxml-readw-diff-7.png"
+}
