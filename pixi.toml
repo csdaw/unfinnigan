@@ -1,0 +1,19 @@
+[workspace]
+authors = ["Charlotte Dawson <csdaw@outlook.com>"]
+channels = ["conda-forge"]
+name = "unfinnigan"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+exclude-newer = "7d"
+
+[dependencies]
+ruby = ">=4.0.6,<5"
+compilers = ">=2.0.0,<3"
+
+[exclude-newer]
+unfinnigan = "0d"
+
+[tasks]
+setup = "gem install jekyll bundler"
+serve = { cmd = "bundle exec jekyll serve --incremental", cwd = "docs" }
+build = { cmd = "bundle exec jekyll build", cwd = "docs" }
